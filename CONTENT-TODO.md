@@ -17,7 +17,7 @@
 ## サブドメイン側（別リポジトリでの対応）
 
 - [ ] `henji.webtool-labs.com/login` に `noindex, nofollow` を設定する。2026年7月23日の確認時点では、robots meta、description、canonicalがない。
-- [ ] `hayo.webtool-labs.com/app` からAdSenseコードを外す。2026年7月23日の確認時点では `index, follow` かつAdSenseコードがあり、設定画面として公開されている。
+- [x] `hayo.webtool-labs.com` からAdSenseコードを外す。2026-07-26、templates/index.html・landing.html・seo_base.htmlからadsbygoogleスクリプトを削除し、本番デプロイ済み。`/app`・`/`・`/privacy`で広告コードが消えていることを確認済み。
 - [ ] 現段階では各サブドメインからAdSenseコードを外す。後日導入する際に、ログイン、登録、設定、管理、エラー、内容のない画面を広告対象から除外する。
 - [ ] 各サブドメインのログイン、登録、管理、エラー画面を一覧化し、noindexとsitemap除外をそれぞれのアプリ側で確認する。
 - [ ] `profile.webtool-labs.com` に固有のcanonical、OGP、Twitter Cardを追加するか、プロフィールサイト側の公開方針に合わせてindex方針を決める。
