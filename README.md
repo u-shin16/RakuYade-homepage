@@ -1,6 +1,6 @@
-# WebTool-Labs homepage
+# RakuYade homepage
 
-WebTool-Labsと公開中のWebアプリを紹介する静的サイトです。
+RakuYadeと公開中のWebアプリを紹介する静的サイトです。
 
 ## ローカル起動
 
