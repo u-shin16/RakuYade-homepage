@@ -39,5 +39,5 @@ createServer((request, response) => {
   }
   createReadStream(filePath).pipe(response);
 }).listen(port, "127.0.0.1", () => {
-  console.log(`WebTool-Labs: http://127.0.0.1:${port}`);
+  console.log(`RakuYade: http://127.0.0.1:${port}`);
 });
