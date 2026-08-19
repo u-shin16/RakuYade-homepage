@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>まとめときや｜階層型Webメモ｜RakuYade</title>
-  <meta name="description" content="RakuYadeで公開している「まとめときや」は、メモを親子構造で整理し、マインドマップ表示でつながりを確認できるWebメモアプリです。テンプレート・自動保存・共同作業機能の仕組みや使い方を詳しく紹介します。">
+  <meta name="description" content="RakuYadeで公開している「まとめときや」は、メモを親子構造で整理し、マインドマップ表示でつながりを確認できるWebメモアプリです。MCP対応でClaude Codeから会話でメモやTodoを操作できます。テンプレート・自動保存・共同作業機能の仕組みや使い方を詳しく紹介します。">
   <link rel="canonical" href="https://webtool-labs.com/services/matome/">
   <meta name="robots" content="index, follow">
   <meta name="google-adsense-account" content="ca-pub-6760057382445478">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta property="og:type" content="website">
   <meta property="og:title" content="まとめときや｜階層構造で整理できるWebメモ｜RakuYade">
-  <meta property="og:description" content="メモを親子構造で整理し、マインドマップ表示でつながりを確認できるWebメモアプリです。">
+  <meta property="og:description" content="メモを親子構造で整理し、マインドマップ表示でつながりを確認できるWebメモアプリです。MCP対応で、Claude Codeから会話でメモやTodoを操作できます。">
   <meta property="og:url" content="https://webtool-labs.com/services/matome/">
   <meta property="og:site_name" content="RakuYade">
   <meta property="og:image" content="https://webtool-labs.com/assets/og-rakuyade.png">
@@ -19,7 +19,7 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="まとめときや｜階層型Webメモ｜RakuYade">
-  <meta name="twitter:description" content="親子構造、マインドマップ、自動保存、共同作業の使い方と注意点を紹介します。">
+  <meta name="twitter:description" content="親子構造、マインドマップ、Claude Code連携（MCP）、共同作業の使い方と注意点を紹介します。">
   <meta name="twitter:image" content="https://webtool-labs.com/assets/og-rakuyade.png">
   <meta name="theme-color" content="#245e74">
   <link rel="icon" type="image/png" sizes="256x256" href="/favicon.png">
@@ -33,7 +33,7 @@
     "url": "https://matome.webtool-labs.com/app",
     "applicationCategory": "ProductivityApplication",
     "operatingSystem": "Webブラウザ",
-    "description": "メモを親子構造で整理し、マインドマップ表示で内容のつながりを確認できるWebメモアプリ。テンプレート、自動保存、共同作業機能を備えています。",
+    "description": "メモを親子構造で整理し、マインドマップ表示で内容のつながりを確認できるWebメモアプリ。テンプレート、自動保存、共同作業機能に加え、MCP（Model Context Protocol）でClaude Codeから会話でメモやTodoを操作できます。",
     "image": "https://webtool-labs.com/assets/icons/matome.webp"
   }
   </script>
@@ -64,6 +64,14 @@
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "共同作業では、合言葉を知って参加した利用者が同じメモを扱います。共有範囲と権限を確認し、合言葉を第三者へ不用意に渡さないでください。保存先などの詳細は管理者確認中です。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Claude Codeからまとめときやのメモを操作できますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい。まとめときやはMCP（Model Context Protocol）に対応しており、アプリのアカウント画面で発行した登録コマンドをターミナルで1回実行すると、Claude Codeからメモやtodoの読み取り・作成・整理を頼めるようになります。ソースコードの取得やPython環境の用意は必要ありません。"
         }
       },
       {
@@ -146,6 +154,7 @@
         <a href="#template">テンプレート</a>
         <a href="#autosave">自動保存</a>
         <a href="#collab">共同作業機能</a>
+        <a href="#claude">Claude Code連携</a>
         <a href="#recommend">おすすめの人</a>
         <a href="#first-use">はじめての使い方</a>
         <a href="#examples">具体的な使用例</a>
@@ -168,6 +177,7 @@
             <article class="feature-item"><h3>マインドマップ表示</h3><p>親子関係を図として表示し、情報の広がりとつながりを確認します。</p></article>
             <article class="feature-item"><h3>ピン留め・テンプレート</h3><p>よく見るメモへ移動しやすくし、繰り返す構成を再利用します。</p></article>
             <article class="feature-item"><h3>自動保存・共同作業</h3><p>入力を保存し、発行された合言葉を使って同じメモを複数人で扱います。</p></article>
+            <article class="feature-item"><h3>Claude Code連携（MCP）</h3><p>AIアシスタントのClaude Codeとつなぎ、会話でメモやTodoを読み書きします。</p></article>
           </div>
         </section>
 
@@ -208,12 +218,43 @@
           <p>部屋を作成した人（ホスト）はすべての操作を行えますが、合言葉を使って参加した人（ゲスト）は、メモの削除や名前の変更など、一部の操作が制限されます。これは、複数人で作業する際に、意図しない削除や変更が起きにくいようにするための仕組みです。</p>
         </section>
 
+        <section id="claude">
+          <h2>Claude Codeとの連携（MCP対応）</h2>
+          <p>まとめときやは<strong>MCP（Model Context Protocol）</strong>に対応しています。AIアシスタントのClaude Codeとつなぐと、アプリの画面を開かなくても、会話でメモやTodoを扱えるようになります。「今日やること教えて」「買い物リストってメモ作って」といった頼み方で操作でき、たまったメモをまとめて読ませて内容を整理してもらう、といった使い方もできます。</p>
+
+          <h3>連携でできること</h3>
+          <ul>
+            <li>メモの一覧と本文を読み取る</li>
+            <li>新しいメモを作成する（親メモを指定して、階層の中に追加できます）</li>
+            <li>既存のメモを書き換える</li>
+            <li>メモをゴミ箱へ移動する</li>
+            <li>Todoの一覧を取得し、完了にする</li>
+          </ul>
+
+          <h3>連携の手順</h3>
+          <ol class="step-list">
+            <li>アプリのアカウント画面にある「Claude連携」を開きます。</li>
+            <li>「Claude Codeと連携する」を押すと、登録用のコマンドが1行表示されます。</li>
+            <li>そのコマンドをコピーし、ターミナルで1回だけ実行します。</li>
+          </ol>
+          <p>ソースコードの取得、Python環境の用意、設定ファイルの編集はいずれも必要ありません。連携したあとは、どのフォルダでClaude Codeを起動してもまとめときやのメモを扱えます。設定はパソコンごとに保存されるため、別の端末でも使いたい場合は、同じ手順をもう一度行ってください。</p>
+
+          <h3>安全のための仕組み</h3>
+          <ul>
+            <li>鍵付きメモの内容は、アプリの設定で許可しない限りAIへ渡りません。</li>
+            <li>「メモを消して」と頼んだ場合もゴミ箱へ移動するだけで、アプリの画面から元に戻せます。完全に削除する手段は連携側に用意していません。</li>
+            <li>登録コマンドには利用者本人のトークンが含まれます。他人の目に触れる場所へ貼り付けないでください。誤って共有してしまった場合は、同じ画面から再発行すると、それまでのコマンドは使えなくなります。</li>
+          </ul>
+          <div class="notice"><p>Claude Code（Anthropicの開発者向けツール）を使っている人向けの機能です。使っていない場合、設定は何も必要ありません。</p></div>
+        </section>
+
         <section id="recommend">
           <h2>利用をおすすめする人</h2>
           <ul>
             <li>勉強や仕事のメモを、テーマごとに構造的に整理したい人</li>
             <li>アイデアや考えを、あとからつながりごと見返したい人</li>
             <li>家族やチームなど、複数人で同じメモを編集しながら作業したい人</li>
+            <li>Claude Codeを使っていて、メモやTodoをAIから直接扱いたい人</li>
           </ul>
         </section>
 
@@ -280,6 +321,10 @@
             <details class="faq-item">
               <summary><h3>保存したメモは他の人に見られますか？</h3></summary>
               <p class="faq-answer">共同作業では、合言葉を知って参加した利用者が同じメモを扱います。共有範囲と権限を確認し、合言葉を第三者へ不用意に渡さないでください。保存先などの詳細は管理者確認中です。</p>
+            </details>
+            <details class="faq-item">
+              <summary><h3>Claude Codeからまとめときやのメモを操作できますか？</h3></summary>
+              <p class="faq-answer">はい。まとめときやはMCP（Model Context Protocol）に対応しています。アプリのアカウント画面で発行した登録コマンドをターミナルで1回実行すると、Claude Codeからメモやtodoの読み取り・作成・整理を頼めるようになります。ソースコードの取得やPython環境の用意は必要ありません。詳しくは<a href="#claude">Claude Codeとの連携</a>をご覧ください。</p>
             </details>
             <details class="faq-item">
               <summary><h3>スマートフォンでも利用できますか？</h3></summary>
