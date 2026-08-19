@@ -1048,6 +1048,22 @@ textarea:focus-visible,
   display: grid;
 }
 
+/* 更新情報は直近6件だけ出し、「もっと見る」で過去分を開く。
+   JavaScriptが無い環境では全件そのまま表示する（.js の有無で切り替え）。 */
+.js .updates-list.is-collapsed .update-item.is-extra {
+  display: none;
+}
+
+.updates-more-row {
+  display: none;
+  margin-top: 20px;
+}
+
+.js .updates-more-row {
+  display: flex;
+  justify-content: center;
+}
+
 .update-item {
   display: grid;
   grid-template-columns: 130px minmax(0, 1fr);
