@@ -2116,3 +2116,12 @@ h3 {
     font-size: 20px;
   }
 }
+
+.post-groups {
+  display: grid;
+  gap: 56px;
+}
+
+.post-groups > section > .lead {
+  margin: 0 0 24px;
+}
