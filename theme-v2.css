@@ -56,7 +56,7 @@ body .service-card h3 a { color: var(--ink); text-decoration: none; }
 body .service-card .service-kind { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.6; }
 body .service-card p { font-size: 14px; line-height: 1.8; color: #333; margin: 6px 0 0; }
 body .service-card-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; margin-top: auto; padding-top: 12px; }
-body .service-card-actions .button { padding: 8px 22px; font-size: 13px; }
+body .service-card-actions .button { --arrow: 28px; padding: 4px 4px 4px 20px; font-size: 13px; gap: 12px; }
 
 /* ---- 大きなバナー ---- */
 .banner { background: var(--sky-strong); color: #06304d; margin-top: clamp(72px, 9vw, 120px); padding: clamp(56px, 7vw, 96px) 48px; }
@@ -65,7 +65,7 @@ body .service-card-actions .button { padding: 8px 22px; font-size: 13px; }
 .banner-body { display: flex; flex-direction: column; align-items: flex-start; gap: 20px; max-width: 360px; }
 .banner-body p { margin: 0; font-size: 16px; font-weight: 500; }
 .banner .button { background: #06304d; border-color: #06304d; color: #fff; }
-.banner .button:hover { background: transparent; color: #06304d; }
+.banner .button:hover { background: #fff; border-color: #fff; color: #06304d; }
 
 /* ---- 大切にしていること・安全：太線の上に見出しと本文 ---- */
 body .values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 40px 32px; }
@@ -90,8 +90,9 @@ body .update-item:last-child { border-bottom: 0; }
 body .update-date { color: var(--muted); font-size: 14px; }
 body .update-tag { background: var(--ink); color: #fff; }
 body .update-item p { margin: 4px 0 0; }
-body .updates-more-row .button { background: var(--ink); border-color: var(--ink); color: #fff; padding: 14px 56px; }
-body .updates-more-row .button:hover { background: #fff; color: var(--ink); }
+body .updates-more-row .button { background: var(--ink); border-color: var(--ink); color: #fff; padding: 14px 48px; }
+body .updates-more-row .button::after { display: none; }
+body .updates-more-row .button:hover { background: var(--blue); border-color: var(--blue); color: #fff; }
 
 /* ---- 利用の流れ：水色の帯 ---- */
 body #flow { background: var(--sky); margin-top: clamp(72px, 9vw, 120px); padding: clamp(56px, 7vw, 96px) 0; }
@@ -134,5 +135,3 @@ body #mission .about-grid .about-copy, body #mission .about-grid .about-copy:las
 @media (max-width: 700px) {
   body #mission .about-grid { grid-template-columns: 1fr; gap: 24px; }
 }
-body .button.secondary { background: transparent; color: var(--navy); border: 2px solid var(--navy); }
-body .button.secondary:hover { background: var(--navy); color: #fff; }
