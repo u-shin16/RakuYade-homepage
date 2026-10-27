@@ -74,3 +74,7 @@ body .button.secondary, body .hero-actions .button { background: transparent; co
 body .button.secondary::after, body .hero-actions .button::after { background-color: var(--navy); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 8h10M9 4l4 4-4 4'/%3E%3C/svg%3E"); }
 body .button.secondary:hover, body .hero-actions .button:hover { background: var(--navy); border-color: var(--navy); color: #fff; }
 body .button.secondary:hover::after, body .hero-actions .button:hover::after { background-color: #fff; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none' stroke='%230b2a4a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 8h10M9 4l4 4-4 4'/%3E%3C/svg%3E"); }
+
+/* 矢印は付けない */
+body .button::after { display: none; }
+body .button { gap: 0; padding: 12px 32px; }

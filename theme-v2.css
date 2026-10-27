@@ -56,7 +56,7 @@ body .service-card h3 a { color: var(--ink); text-decoration: none; }
 body .service-card .service-kind { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.6; }
 body .service-card p { font-size: 14px; line-height: 1.8; color: #333; margin: 6px 0 0; }
 body .service-card-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; margin-top: auto; padding-top: 12px; }
-body .service-card-actions .button { --arrow: 28px; padding: 4px 4px 4px 20px; font-size: 13px; gap: 12px; }
+body .service-card-actions .button { padding: 8px 22px; font-size: 13px; }
 
 /* ---- 大きなバナー ---- */
 .banner { background: var(--sky-strong); color: #06304d; margin-top: clamp(72px, 9vw, 120px); padding: clamp(56px, 7vw, 96px) 48px; }
