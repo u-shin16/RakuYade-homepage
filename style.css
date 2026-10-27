@@ -1874,6 +1874,10 @@ h3 {
   background: #12333f;
 }
 
+.site-footer .footer-brand {
+  color: #f4f7f6;
+}
+
 .footer-grid {
   gap: 52px;
   padding-bottom: 54px;

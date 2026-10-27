@@ -93,3 +93,37 @@
     }
   });
 })();
+
+/* 冒頭の「最新の更新」：更新情報の先頭3件をそのまま写す（更新を足しても直さなくて済むように） */
+(function () {
+  "use strict";
+
+  var box = document.getElementById("latest");
+  var target = document.getElementById("latest-list");
+  var items = document.querySelectorAll("#updates-list .update-item");
+
+  if (!box || !target || items.length === 0) {
+    return;
+  }
+
+  for (var i = 0; i < items.length && i < 3; i++) {
+    var date = items[i].querySelector(".update-date");
+    var text = items[i].querySelector("p");
+    if (!date || !text) {
+      continue;
+    }
+    var row = document.createElement("div");
+    row.className = "latest-item";
+    var d = document.createElement("span");
+    d.className = "latest-date";
+    d.textContent = date.textContent;
+    var t = document.createElement("span");
+    t.className = "latest-text";
+    t.textContent = text.textContent;
+    row.appendChild(d);
+    row.appendChild(t);
+    target.appendChild(row);
+  }
+
+  box.hidden = false;
+})();
