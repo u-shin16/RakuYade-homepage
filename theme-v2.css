@@ -191,3 +191,5 @@ body #mission .about-grid .about-copy, body #mission .about-grid .about-copy:las
 @media (max-width: 700px) {
   body #mission .about-grid { grid-template-columns: 1fr; gap: 24px; }
 }
+body .button.secondary { background: transparent; color: var(--navy); border: 2px solid var(--navy); }
+body .button.secondary:hover { background: var(--navy); color: #fff; }
