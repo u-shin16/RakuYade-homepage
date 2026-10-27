@@ -1,49 +1,6 @@
-/* ホームの見た目の作り直し（2026-10-27）。このファイルへのlinkを消せば元の見た目に戻る。
-   参考：ポケモン公式・ナイキ・フェンリル。白地・普通のゴシック体・平らな色・水色基調・余白を広く */
+/* ホームだけの見た目（2026-10-27）。共通部分は theme-common.css。参考：ポケモン公式・ナイキ・フェンリル */
 
-:root {
-  --ink: #111;
-  --muted: #6b6b6b;
-  --line: #e3e3e3;
-  --surface: #fff;
-  --surface-soft: #f5f5f5;
-  --navy: #0b2a4a;
-  --sky: #eef8fd;
-  --sky-strong: #9bd9f5;
-  --blue: #0a7bb8;
-  --brand: #0b2a4a;
-  --brand-dark: #06304d;
-  --brand-soft: #eef8fd;
-  --accent: #0a7bb8;
-  --shadow: none;
-  --radius-lg: 0;
-  --radius-md: 0;
-  --content: 1344px;
-  --en: "Barlow Condensed", "Arial Narrow", sans-serif;
-}
-
-body {
-  background: #fff;
-  color: var(--ink);
-  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
-  font-size: 15px;
-  line-height: 1.8;
-}
-h1, h2, h3, .brand { font-family: inherit; letter-spacing: 0.02em; }
 body .container { width: min(100% - 96px, var(--content)); }
-
-/* ---- 上のバー・ヘッダー ---- */
-.topbar { background: var(--surface-soft); height: 36px; display: flex; justify-content: flex-end; align-items: center; gap: 20px; padding: 0 48px; font-size: 12px; font-weight: 500; }
-.topbar a { color: var(--ink); text-decoration: none; }
-.topbar a:hover { opacity: .7; }
-body .site-header { background: #fff; border-bottom: 0; box-shadow: none; backdrop-filter: none; position: static; }
-body .header-inner { width: auto; padding: 0 48px; max-width: none; }
-body .brand { font-family: var(--en); font-weight: 800; font-size: 28px; letter-spacing: 0.04em; display: inline-flex; align-items: center; gap: 10px; color: var(--ink); }
-body .brand-mark { display: none; }
-body .brand-logo { width: 32px; height: 32px; border-radius: 8px; display: block; }
-body .site-nav a { font-weight: 500; font-size: 15px; color: var(--ink); }
-body .site-nav a[aria-current="page"] { border-bottom: 0; box-shadow: none; font-weight: 700; }
-body .site-nav a::after { display: none; }
 
 /* ---- ヒーロー ---- */
 body .hero { background: var(--sky); padding: 0; border: 0; text-align: left; }
@@ -77,12 +34,6 @@ body .section-heading h2 { margin: 0; font-size: 14px; font-weight: 700; line-he
 body .section-heading p:not(.eyebrow) { flex-basis: 100%; margin: 12px 0 0; max-width: 640px; font-size: 14px; color: #555; }
 body .section-heading p.eyebrow + h2 + p { margin-top: 20px; }
 
-body .button { background: var(--navy); color: #fff; border: 2px solid var(--navy); border-radius: 999px; box-shadow: none; font-weight: 700; font-size: 14px; letter-spacing: 0.04em; padding: 10px 28px; min-height: 0; text-decoration: none; }
-body .button:hover { background: #fff; color: var(--navy); }
-body .button.secondary { background: transparent; color: var(--navy); }
-body .button.secondary:hover { background: var(--navy); color: #fff; }
-body .text-link { color: var(--ink); font-weight: 700; text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
-body .text-link:hover { color: var(--blue); }
 
 /* ---- RakuYadeとは ---- */
 #mission { padding-top: clamp(96px, 14vw, 200px); }
@@ -159,22 +110,14 @@ body .faq-item summary::after { color: var(--blue); }
 body .faq-item .faq-answer { padding: 0 0 20px; font-size: 14px; color: #555; max-width: 720px; }
 body #faq { padding-bottom: clamp(72px, 9vw, 120px); }
 
-/* ---- フッター ---- */
-body .site-footer { background: #0b2a3f; }
-body .site-footer .brand, body .site-footer .footer-brand { color: #fff; }
-body .site-footer .footer-brand .brand-logo { width: 32px; height: 32px; }
-body .site-footer .container { width: auto; max-width: none; padding: 0 48px; }
-
 /* ---- スマホ ---- */
 @media (max-width: 700px) {
-  .topbar { padding: 0 16px; gap: 14px; justify-content: flex-start; overflow-x: auto; }
-  body .header-inner { padding: 0 16px; }
   body .hero .hero-head { padding-left: 16px; padding-right: 16px; }
   .latest { padding: 32px 16px 0; }
   .latest .latest-box { padding: 24px 20px; gap: 12px; }
   .latest-label { width: auto; }
   .latest-item { gap: 4px; }
-  body .section .container, body .site-footer .container { padding: 0 16px; }
+  body .section .container { padding: 0 16px; }
   .banner { padding-left: 16px; padding-right: 16px; }
   body .post-card { grid-template-columns: 1fr; }
   body .post-card .post-meta { grid-row: auto; }
