@@ -64,8 +64,6 @@ body .service-card-actions .button { padding: 8px 22px; font-size: 13px; }
 .banner-word { margin: 0; font-family: var(--en); font-weight: 800; font-size: clamp(72px, 14vw, 200px); line-height: .9; letter-spacing: .01em; }
 .banner-body { display: flex; flex-direction: column; align-items: flex-start; gap: 20px; max-width: 360px; }
 .banner-body p { margin: 0; font-size: 16px; font-weight: 500; }
-.banner .button { background: #06304d; border-color: #06304d; color: #fff; }
-.banner .button:hover { background: #fff; border-color: #fff; color: #06304d; }
 
 /* ---- 大切にしていること・安全：太線の上に見出しと本文 ---- */
 body .values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 40px 32px; }
@@ -90,9 +88,8 @@ body .update-item:last-child { border-bottom: 0; }
 body .update-date { color: var(--muted); font-size: 14px; }
 body .update-tag { background: var(--ink); color: #fff; }
 body .update-item p { margin: 4px 0 0; }
-body .updates-more-row .button { background: var(--ink); border-color: var(--ink); color: #fff; padding: 14px 48px; }
+body .updates-more-row .button { padding: 14px 48px; }
 body .updates-more-row .button::after { display: none; }
-body .updates-more-row .button:hover { background: var(--blue); border-color: var(--blue); color: #fff; }
 
 /* ---- 利用の流れ：水色の帯 ---- */
 body #flow { background: var(--sky); margin-top: clamp(72px, 9vw, 120px); padding: clamp(56px, 7vw, 96px) 0; }

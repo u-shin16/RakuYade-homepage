@@ -78,3 +78,12 @@ body .button.secondary:hover::after, body .hero-actions .button:hover::after { b
 /* 矢印は付けない */
 body .button::after { display: none; }
 body .button { gap: 0; padding: 12px 32px; }
+
+/* ボタンの動き：乗せると、左から色が走る */
+body .button.button { --sweep: var(--blue); background-color: var(--navy); background-image: linear-gradient(var(--sweep), var(--sweep)); background-repeat: no-repeat; background-position: left center; background-size: 0% 100%; color: #fff; border-color: var(--navy); transition: background-size .4s cubic-bezier(.2, .7, .2, 1), color .3s, border-color .3s; }
+body .button.button:hover { background-image: linear-gradient(var(--sweep), var(--sweep)); background-size: 100% 100%; background-color: var(--navy); border-color: var(--blue); color: #fff; }
+body .button.secondary.button, body .hero-actions .button.button { --sweep: var(--navy); background-image: linear-gradient(var(--sweep), var(--sweep)); background-size: 0% 100%; background-color: transparent; color: var(--navy); border-color: var(--navy); }
+body .button.secondary.button:hover, body .hero-actions .button.button:hover { background-image: linear-gradient(var(--sweep), var(--sweep)); background-size: 100% 100%; background-color: transparent; border-color: var(--navy); color: #fff; }
+body .banner .button.button { --sweep: #fff; }
+body .banner .button.button:hover { border-color: #fff; color: var(--navy); }
+@media (prefers-reduced-motion: reduce) { body .button.button { transition: none; } }
