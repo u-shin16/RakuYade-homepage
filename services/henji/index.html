@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Zen+Kaku+Gothic+New:wght@700;900&display=swap">
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/theme-common.css?v=20261027h">
-  <link rel="stylesheet" href="/theme-pages.css?v=20261027h">
+  <link rel="stylesheet" href="/theme-pages.css?v=20261029e">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -125,7 +125,7 @@
     </div>
   </header>
 
-  <main id="main">
+  <main id="main" class="apps-page">
     <header class="page-hero">
       <div class="container">
         <nav class="breadcrumb" aria-label="パンくずリスト">
@@ -140,69 +140,44 @@
       </div>
     </header>
 
-    <div class="section container content-layout">
-      <nav class="side-nav" aria-label="ページ内メニュー">
-        <strong>目次</strong>
-        <a href="#overview">どんなアプリか</a>
-        <a href="#features">主な機能</a>
-        <a href="#why">開発の背景</a>
-        <a href="#difference">フォーム単体確認との違い</a>
-        <a href="#forms">Googleフォーム連携</a>
-        <a href="#permissions">取得する情報</a>
-        <a href="#first-use">はじめての使い方</a>
-        <a href="#examples">具体的な使用例</a>
-        <a href="#caution">利用時の注意点</a>
-        <a href="#data">保存と外部サービス</a>
-        <a href="#recommend">おすすめの人</a>
-        <a href="#roadmap">今後の改善</a>
-        <a href="#faq">よくある質問</a>
-      </nav>
-
-      <article class="prose">
-        <section id="overview">
-          <h2>どのようなアプリなのか</h2>
+    <div class="reading-sections">
+        <section class="section" id="overview"><div class="container"><div class="section-heading"><p class="eyebrow">01</p><h2>どのようなアプリなのか</h2></div><div class="prose">
           <p>返事きたでは、複数のGoogleフォームに届いた問い合わせを、一括確認・対応管理できるWebアプリです。問い合わせフォーム、要望受付フォーム、不具合報告フォームなど、用途ごとにGoogleフォームを分けている場合でも、届いた回答をまとめて確認しやすくします。</p>
           <p>フォームの内容を確認するだけでなく、「どの問い合わせを見たか」「どれを対応すべきか」を整理しやすくすることで、返信忘れや確認漏れを減らすことを目指しています。</p>
-        </section>
+        </div></div></section>
 
-        <section id="features">
-          <h2>主な機能</h2>
+        <section class="section" id="features"><div class="container"><div class="section-heading"><p class="eyebrow">02</p><h2>主な機能</h2></div><div class="prose">
           <div class="feature-grid">
             <article class="feature-item"><h3>複数フォームの確認</h3><p>Googleフォームを用途別に分けていても、一覧から対象を選んで確認します。</p></article>
             <article class="feature-item"><h3>質問・回答の閲覧</h3><p>各フォームの質問と届いた回答を、対応判断に必要な形で表示します。</p></article>
             <article class="feature-item"><h3>対応状況の整理</h3><p>確認が必要な問い合わせと対応済みの内容を区別し、見落としを減らします。</p></article>
             <article class="feature-item"><h3>Googleアカウント連携</h3><p>利用者自身がアクセスできるフォームを取得するため、Googleログインを使用します。</p></article>
           </div>
-        </section>
+        </div></div></section>
 
-        <section id="why">
-          <h2>なぜ開発したのか</h2>
+        <section class="section" id="why"><div class="container"><div class="section-heading"><p class="eyebrow">03</p><h2>なぜ開発したのか</h2></div><div class="prose">
           <p>個人開発や小さなサービス運営では、お問い合わせ、改善要望、不具合報告、広告関連の連絡などをGoogleフォームで受け付けることがあります。フォームが一つだけなら管理しやすい一方で、サービスや用途が増えると、どのフォームに新しい回答が届いたのかをひとつずつ確認する必要が出てきます。</p>
           <p>返事きたでは、こうした確認作業をまとめ、問い合わせ対応を日々の運営の中で扱いやすくすることを目的にしています。</p>
-        </section>
+        </div></div></section>
 
-        <section id="difference">
-          <h2>Googleフォームを個別に確認する場合との違い</h2>
+        <section class="section" id="difference"><div class="container"><div class="section-heading"><p class="eyebrow">04</p><h2>Googleフォームを個別に確認する場合との違い</h2></div><div class="prose">
           <p>Googleフォームは、単体のフォームごとに回答を確認するには便利です。一方で、複数のフォームをまたいで「新しい問い合わせが来ているか」「どれを対応済みにしたか」を追う場合は、フォームを開き直したり、回答画面を行き来したりする手間がかかります。</p>
           <p>返事きたでは、複数フォームの問い合わせ確認と対応管理に焦点を絞ることで、フォームごとの確認作業を減らし、返事が必要な内容を見落としにくくします。</p>
-        </section>
+        </div></div></section>
 
-        <section id="forms">
-          <h2>Googleフォーム連携について</h2>
+        <section class="section" id="forms"><div class="container"><div class="section-heading"><p class="eyebrow">05</p><h2>Googleフォーム連携について</h2></div><div class="prose">
           <p>利用時にはGoogleアカウントでログインし、Googleフォームに関する必要な権限を許可します。連携後は、Googleフォームの一覧、フォーム内の質問、届いた回答を確認できます。</p>
           <div class="notice">
             <p>返事きたでは、Googleフォームの作成・編集・削除は行いません。フォームや回答の確認に必要な情報を、読み取り専用で扱います。</p>
           </div>
-        </section>
+        </div></div></section>
 
-        <section id="permissions">
-          <h2>取得する情報について</h2>
+        <section class="section" id="permissions"><div class="container"><div class="section-heading"><p class="eyebrow">06</p><h2>取得する情報について</h2></div><div class="prose">
           <p>ログイン時に取得する主な情報は、Googleアカウントの名前・メールアドレス・プロフィール画像、Googleフォームの一覧、Googleフォームの質問と回答です。これらの情報は、問い合わせの確認・管理のために使用します。</p>
           <p>取得した情報は問い合わせの確認・管理画面で扱います。ただし、サーバーへの保存有無、保持期間、削除方法は本リポジトリから確認できません。詳しい確認状況は下記の「保存と外部サービス」をご覧ください。</p>
-        </section>
+        </div></div></section>
 
-        <section id="first-use">
-          <h2>初めて利用する人向けの使い方</h2>
+        <section class="section" id="first-use"><div class="container"><div class="section-heading"><p class="eyebrow">07</p><h2>初めて利用する人向けの使い方</h2></div><div class="prose">
           <ol class="step-list">
             <li><span><a href="https://henji.webtool-labs.com/" target="_blank" rel="noopener noreferrer">返事きたで</a>にブラウザでアクセスします。</span></li>
             <li>Googleアカウントでログインし、表示される権限内容を確認します。</li>
@@ -210,26 +185,23 @@
             <li>対応が必要な問い合わせを確認し、対応状況を整理します。</li>
             <li>運営中のフォームを定期的に見返し、返信忘れや確認漏れを防ぎます。</li>
           </ol>
-        </section>
+        </div></div></section>
 
-        <section id="examples">
-          <h2>具体的な使用例</h2>
+        <section class="section" id="examples"><div class="container"><div class="section-heading"><p class="eyebrow">08</p><h2>具体的な使用例</h2></div><div class="prose">
           <ul>
             <li>サービスごとに問い合わせフォームを分けている個人開発者が、朝にまとめて新着回答を確認する。</li>
             <li>要望・不具合・広告連絡のフォームを分けた運営者が、返答の必要な内容を見落としていないか確認する。</li>
             <li>複数フォームを行き来せず、回答内容と対応状況を同じ流れで見直す。</li>
           </ul>
-        </section>
+        </div></div></section>
 
-        <section id="caution">
-          <h2>利用時の注意点</h2>
+        <section class="section" id="caution"><div class="container"><div class="section-heading"><p class="eyebrow">09</p><h2>利用時の注意点</h2></div><div class="prose">
           <div class="notice">
             <p>GoogleアカウントやGoogleフォームの権限設定、フォームの共有状態によって、確認できる内容が変わる場合があります。業務や個人情報を含むフォームを扱う場合は、Googleアカウントの管理、権限の許可範囲、フォーム回答の取り扱いにご注意ください。</p>
           </div>
-        </section>
+        </div></div></section>
 
-        <section id="data">
-          <h2>保存されるデータと外部サービス</h2>
+        <section class="section" id="data"><div class="container"><div class="section-heading"><p class="eyebrow">10</p><h2>保存されるデータと外部サービス</h2></div><div class="prose">
           <div class="table-scroll" tabindex="0" role="region" aria-label="返事きたでのデータ取扱い">
             <table class="compare-table">
               <thead><tr><th scope="col">対象</th><th scope="col">この紹介サイトで確認できる範囲</th></tr></thead>
@@ -243,25 +215,22 @@
           </div>
           <div class="notice"><p>業務情報や個人情報を含む回答を扱う前に、Googleの権限画面を確認してください。連携解除、サーバー保存、保持期間、削除手順は確認中です。</p></div>
           <!-- TODO(site-owner): Google OAuthスコープ、回答・対応状態の保存有無、保存先、保持期間、連携解除・削除手順を実装とGoogle Cloud Consoleで確認して更新する。 -->
-        </section>
+        </div></div></section>
 
-        <section id="recommend">
-          <h2>利用をおすすめする人</h2>
+        <section class="section" id="recommend"><div class="container"><div class="section-heading"><p class="eyebrow">11</p><h2>利用をおすすめする人</h2></div><div class="prose">
           <ul>
             <li>複数のGoogleフォームで問い合わせや要望を受け付けている人</li>
             <li>個人開発や小規模サービス運営で、返信忘れを減らしたい人</li>
             <li>フォームごとの回答確認をまとめて効率化したい人</li>
           </ul>
-        </section>
+        </div></div></section>
 
-        <section id="roadmap">
-          <h2>今後の改善について</h2>
+        <section class="section" id="roadmap"><div class="container"><div class="section-heading"><p class="eyebrow">12</p><h2>今後の改善について</h2></div><div class="prose">
           <p>現時点で、このポータルから確認できる具体的な追加予定は公表していません。Google連携の安全性と問い合わせ確認の分かりやすさを優先し、実装・公開が確認できた変更だけを更新情報へ反映します。</p>
           <!-- TODO(site-owner): 公開可能なロードマップが決まった場合のみ、実装状況と予定時期を確認して追記する。 -->
-        </section>
+        </div></div></section>
 
-        <section id="faq">
-          <h2>よくある質問</h2>
+        <section class="section" id="faq"><div class="container"><div class="section-heading"><p class="eyebrow">13</p><h2>よくある質問</h2></div><div class="prose">
           <div class="faq-list">
             <details class="faq-item">
               <summary><h3>返事きたでは何ができるアプリですか？</h3></summary>
@@ -284,18 +253,18 @@
               <p class="faq-answer"><a href="/contact.html">お問い合わせページ</a>から、サービス名「返事きたで」と発生した状況を添えてご連絡ください。</p>
             </details>
           </div>
-        </section>
+        </div></div></section>
 
-        <section>
+        <section class="section"><div class="container"><div class="prose">
           <div class="cta-card">
             <h2>返事きたでを使ってみる</h2>
             <p>複数のGoogleフォームに届いた問い合わせを、まとめて確認するところから始めてみてください。</p>
             <a class="button" href="https://henji.webtool-labs.com/" target="_blank" rel="noopener noreferrer">実際のアプリを開く</a>
             <p><a class="text-link" href="/services/">ほかのWebアプリと比較する</a></p>
           </div>
-        </section>
-      </article>
-    </div>
+        </div></div></section>
+      </div>
+
   </main>
 
   <footer class="site-footer">

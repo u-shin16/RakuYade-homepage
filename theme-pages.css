@@ -108,7 +108,23 @@ body .service-choice .choice-label { color: var(--blue); }
 .apps-page .cta-card { margin: 0; }
 
 /* このサイトについて：ホームの「RakuYadeとは」と同じ文字の大きさ・太線 */
-.apps-page .section p { max-width: 760px; margin: 0 0 16px; font-size: 14px; line-height: 2; color: #555; }
-.apps-page .section a { color: var(--blue); }
-.apps-page .about-lead p { max-width: 960px; font-size: clamp(18px, 2vw, 24px); line-height: 1.9; font-weight: 700; color: #222; }
+.apps-page .section > .container > p { max-width: 760px; margin: 0 0 16px; font-size: 14px; line-height: 2; color: #555; }
+.apps-page .section a:not(.button) { color: var(--blue); }
+.apps-page .about-lead > .container > p { max-width: 960px; font-size: clamp(18px, 2vw, 24px); line-height: 1.9; font-weight: 700; color: #222; }
 .apps-page .notes-list li strong { display: block; margin-bottom: 10px; font-size: 18px; line-height: 1.5; color: var(--ink); }
+
+/* 読み物ページ（記事・アプリ紹介・規約など）：数字の見出しを少し小さく、間をつめる */
+.apps-page .reading-sections .section { padding-top: clamp(40px, 5vw, 64px); }
+.apps-page .reading-sections .section:first-child { padding-top: clamp(56px, 7vw, 88px); }
+.apps-page .reading-sections .section-heading .eyebrow { font-size: clamp(32px, 4vw, 44px); color: var(--blue); }
+.apps-page .reading-sections .section-heading h2 { font-size: clamp(18px, 2vw, 22px); }
+.apps-page .reading-sections .prose { max-width: 800px; }
+.apps-page .reading-sections .contact-card { margin-bottom: 20px; }
+.apps-page .reading-sections .section .container { display: grid; grid-template-columns: 300px minmax(0, 800px); column-gap: clamp(32px, 5vw, 80px); align-items: start; }
+.apps-page .reading-sections .section-heading { grid-column: 1; grid-row: 1; flex-direction: column; align-items: flex-start; gap: 6px; margin: 0; position: sticky; top: 24px; }
+.apps-page .reading-sections .section .container > :not(.section-heading) { grid-column: 2; }
+.apps-page .reading-sections .section .container > .prose { max-width: none; }
+@media (max-width: 900px) {
+  .apps-page .reading-sections .section .container { display: block; }
+  .apps-page .reading-sections .section-heading { position: static; margin-bottom: 20px; flex-direction: row; align-items: baseline; }
+}

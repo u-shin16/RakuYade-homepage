@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Zen+Kaku+Gothic+New:wght@700;900&display=swap">
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/theme-common.css?v=20261027h">
-  <link rel="stylesheet" href="/theme-pages.css?v=20261027h">
+  <link rel="stylesheet" href="/theme-pages.css?v=20261029e">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -70,7 +70,7 @@
     </div>
   </header>
 
-  <main id="main">
+  <main id="main" class="apps-page">
     <header class="page-hero">
       <div class="container">
         <nav class="breadcrumb" aria-label="パンくずリスト"><a href="/">ホーム</a><span class="sep">/</span><a href="/blog/">記事</a><span class="sep">/</span><span aria-current="page">スマホのアラームが鳴らないときの原因チェックリスト</span></nav>
@@ -81,20 +81,8 @@
       </div>
     </header>
 
-    <div class="section container content-layout">
-      <nav class="side-nav" aria-label="ページ内メニュー">
-        <strong>目次</strong>
-        <a href="#first">まず確認する3つ</a>
-        <a href="#mode">モード設定による停止</a>
-        <a href="#app">アプリを使っている場合</a>
-        <a href="#other">見落としやすい原因</a>
-        <a href="#checklist">チェックリスト</a>
-        <a href="#tools">止めた記憶がない場合</a>
-        <a href="#summary">まとめ</a>
-      </nav>
-      <article class="prose">
-        <section id="first">
-          <h2>まず確認する3つ</h2>
+    <div class="reading-sections">
+        <section class="section" id="first"><div class="container"><div class="section-heading"><p class="eyebrow">01</p><h2>まず確認する3つ</h2></div><div class="prose">
           <p>アラームが鳴らなかったとき、原因の多くはこの3つのどれかです。順に確認してください。</p>
           <h3>1. アラーム自体がオンになっているか</h3>
           <p>拍子抜けするようですが、これがもっとも多い原因です。前日に一度アラームを止めたあと、スイッチがオフのまま戻していないケースが典型です。とくに「1回のみ」の設定にしていると、鳴った翌日は自動的にオフになります。</p>
@@ -104,10 +92,9 @@
           <p>アラームの音量が独立して設定できる端末では、そちらが下がっていないかも確認してください。設定画面でアラームのテスト再生ができる場合は、実際に音を出して確かめるのが確実です。</p>
           <h3>3. 音の出力先が別の機器になっていないか</h3>
           <p>Bluetoothイヤホンやスピーカーに接続されたままだと、音がそちらに出て、手元では聞こえないことがあります。寝る前に音楽を聴いてそのまま寝た日に起きやすいパターンです。就寝前にBluetoothを切る習慣をつけると防げます。</p>
-        </section>
+        </div></div></section>
 
-        <section id="mode">
-          <h2>モード設定による停止</h2>
+        <section class="section" id="mode"><div class="container"><div class="section-heading"><p class="eyebrow">02</p><h2>モード設定による停止</h2></div><div class="prose">
           <p>上の3つで解決しない場合、端末のモード設定を確認します。</p>
           <h3>おやすみモード・集中モード</h3>
           <p>通知を一時的に止める機能です。標準の時計アプリのアラームはこの設定の影響を受けない場合が多い一方、<strong>別のアプリが出す通知としてのアラームは止められることがあります</strong>。目覚まし用のアプリを使っている場合は、そのアプリをモードの例外に指定しておいてください。</p>
@@ -115,10 +102,9 @@
           <p>端末やOSのバージョンによって、アラームがこの設定を無視するかどうかの挙動が異なります。無視して鳴る端末もあれば、鳴らない端末もあるため、自分の端末でどうなるかを一度確かめておくのが確実です。確認方法は単純で、マナーモードにした状態で数分後のアラームを設定し、実際に鳴るか試すだけです。</p>
           <h3>低電力モード・バッテリー最適化</h3>
           <p>バッテリーを節約するために、バックグラウンドで動くアプリの動作を制限する機能です。標準の時計アプリは対象外であることが多いものの、後からインストールしたアプリは制限の対象になり、指定した時刻に動けないことがあります。目覚まし用アプリを使うなら、バッテリー最適化の対象から外しておいてください。</p>
-        </section>
+        </div></div></section>
 
-        <section id="app">
-          <h2>アプリを使っている場合の追加チェック</h2>
+        <section class="section" id="app"><div class="container"><div class="section-heading"><p class="eyebrow">03</p><h2>アプリを使っている場合の追加チェック</h2></div><div class="prose">
           <p>標準の時計アプリではなく、別の目覚ましアプリやWebアプリを使っている場合は、次の点も確認が必要です。</p>
           <ul>
             <li><strong>通知の許可</strong> — アプリに通知の権限を与えていないと、時刻になっても画面に何も出ません。設定のアプリ一覧から、対象アプリの通知が許可されているか確認してください</li>
@@ -126,10 +112,9 @@
             <li><strong>Webアプリの場合はタブを閉じていないか</strong> — ブラウザ上で動くアラームは、タブを閉じると動作しません。就寝時はタブを開いたままにしておく必要があります</li>
             <li><strong>ブラウザのバックグラウンド制限</strong> — 端末によっては、画面を消したあとにブラウザの処理が止められることがあります。この場合、Webアプリのアラームは時刻どおりに動かない可能性があります</li>
           </ul>
-        </section>
+        </div></div></section>
 
-        <section id="other">
-          <h2>見落としやすい原因</h2>
+        <section class="section" id="other"><div class="container"><div class="section-heading"><p class="eyebrow">04</p><h2>見落としやすい原因</h2></div><div class="prose">
           <h3>端末の時刻がずれている</h3>
           <p>時刻を手動設定にしていると、少しずつずれていくことがあります。設定を自動取得に切り替えておけば防げます。海外から戻った直後にタイムゾーンが残っている、というケースもあります。</p>
           <h3>就寝中に電源が切れていた</h3>
@@ -137,10 +122,9 @@
           <h3>音は鳴っていたが起きられなかった</h3>
           <p>実は最も多い可能性がこれです。アラームは正常に動作していて、無意識に止めていた場合、本人には「鳴らなかった」としか感じられません。</p>
           <p>見分け方があります。<strong>アラームの履歴や画面の状態を確認する</strong>ことです。止めた記録が残っているなら、鳴っていたことになります。家族と住んでいるなら、音が聞こえたか聞いてみるのも確実です。</p>
-        </section>
+        </div></div></section>
 
-        <section id="checklist">
-          <h2>チェックリスト</h2>
+        <section class="section" id="checklist"><div class="container"><div class="section-heading"><p class="eyebrow">05</p><h2>チェックリスト</h2></div><div class="prose">
           <p>朝、鳴らなかった日に上から順に確認してください。</p>
           <div class="table-scroll" tabindex="0" role="region" aria-label="アラームが鳴らないときのチェックリスト">
             <table class="compare-table">
@@ -159,10 +143,9 @@
             </table>
           </div>
           <p>設定を直したあとは、必ず数分後のアラームでテストしてください。翌朝ぶっつけで確認すると、直っていなかった場合にもう一度寝坊することになります。</p>
-        </section>
+        </div></div></section>
 
-        <section id="tools">
-          <h2>止めた記憶がない場合の対策</h2>
+        <section class="section" id="tools"><div class="container"><div class="section-heading"><p class="eyebrow">06</p><h2>止めた記憶がない場合の対策</h2></div><div class="prose">
           <p>チェックリストを一通り確認して設定に問題がなく、それでも起きられない場合は、無意識にアラームを止めている可能性が高くなります。この場合、設定を見直しても解決しません。止める操作そのものを難しくする必要があります。</p>
           <p>RakuYadeで公開している<a href="/services/hayo/">はよおきんかい</a>は、この考え方で作ったWeb目覚ましです。音を止める前に操作を挟む起床ミッションと、止めたあとも起きているかを確認する起床確認を組み合わせています。</p>
           <p>ただしWebアプリのため、この記事で挙げた通知許可やバックグラウンド制限の影響を受けます。通知を許可し、就寝時にタブを開いたままにしておく必要がある点は、使う前に理解しておいてください。重要な予定がある日は端末標準のアラームも併用してください。</p>
@@ -173,17 +156,16 @@
             <p><a class="text-link" href="https://hayo.webtool-labs.com/">はよおきんかいを実際に使ってみる</a></p>
             <p><a class="text-link" href="/blog/nidone-taisaku/">二度寝の対策記事も読む</a></p>
           </div>
-        </section>
+        </div></div></section>
 
-        <section id="summary">
-          <h2>まとめ</h2>
+        <section class="section" id="summary"><div class="container"><div class="section-heading"><p class="eyebrow">07</p><h2>まとめ</h2></div><div class="prose">
           <p>アラームが鳴らない原因は、設定のオフ、音量、出力先の3つでほとんどが説明できます。それで解決しない場合は、おやすみモードやバッテリー最適化といったモード設定、アプリの通知許可を確認してください。</p>
           <p>一通り確認しても改善しないときは、鳴っていたけれど無意識に止めていた可能性を疑ってください。この場合は設定の問題ではないので、止め方そのものを変える必要があります。</p>
           <p>どの対策をとる場合でも、直したあとに必ずテストしてから就寝してください。確認せずに翌朝を迎えるのが、いちばん危険です。</p>
-        </section>
+        </div></div></section>
         <p class="small-note"><a class="text-link" href="/blog/">記事一覧に戻る</a></p>
-      </article>
-    </div>
+      </div>
+
   </main>
 
   <footer class="site-footer">

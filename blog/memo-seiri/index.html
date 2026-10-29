@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Zen+Kaku+Gothic+New:wght@700;900&display=swap">
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/theme-common.css?v=20261027h">
-  <link rel="stylesheet" href="/theme-pages.css?v=20261027h">
+  <link rel="stylesheet" href="/theme-pages.css?v=20261029e">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -70,7 +70,7 @@
     </div>
   </header>
 
-  <main id="main">
+  <main id="main" class="apps-page">
     <header class="page-hero">
       <div class="container">
         <nav class="breadcrumb" aria-label="パンくずリスト"><a href="/">ホーム</a><span class="sep">/</span><a href="/blog/">記事</a><span class="sep">/</span><span aria-current="page">メモが増えると探せなくなる原因と、階層で整理する方法</span></nav>
@@ -81,28 +81,14 @@
       </div>
     </header>
 
-    <div class="section container content-layout">
-      <nav class="side-nav" aria-label="ページ内メニュー">
-        <strong>目次</strong>
-        <a href="#why">探せなくなる原因</a>
-        <a href="#symptoms">散らかったメモの3つの症状</a>
-        <a href="#hierarchy">階層で整理する考え方</a>
-        <a href="#howto">階層の作り方とルール</a>
-        <a href="#tag">タグとの使い分け</a>
-        <a href="#mindmap">全体構造の確認方法</a>
-        <a href="#tools">階層メモが使えるアプリ</a>
-        <a href="#summary">まとめ</a>
-      </nav>
-      <article class="prose">
-        <section id="why">
-          <h2>なぜメモは増えるほど使えなくなるのか</h2>
+    <div class="reading-sections">
+        <section class="section" id="why"><div class="container"><div class="section-heading"><p class="eyebrow">01</p><h2>なぜメモは増えるほど使えなくなるのか</h2></div><div class="prose">
           <p>メモを取り始めたころは、思いついたことを書き留めるだけで十分に役立ちます。ところが半年、一年と続けるうちに、ある時点から「書いたはずなのに見つからない」が起き始めます。そして見つからないから同じ内容をもう一度書き、重複したメモがさらに増えていきます。</p>
           <p>原因は書く量ではなく、<strong>すべてのメモが同じ階層に並んでいること</strong>にあります。多くのメモアプリは、作成した順にメモが縦に積み上がる形式です。この形式は10件、20件のうちは快適ですが、100件を超えると一覧をスクロールして探すことが現実的でなくなります。</p>
           <p>「検索すればいい」と思うかもしれません。ただ検索が効くのは、探しているメモに何が書いてあったか覚えている場合だけです。実際に探すときは「たしか去年、旅行の準備について何か書いた気がする」といった曖昧な記憶から始まることが多く、この状態では検索語が思いつきません。結果として、一覧を上から眺めるという最も非効率な方法に戻ることになります。</p>
-        </section>
+        </div></div></section>
 
-        <section id="symptoms">
-          <h2>散らかったメモに共通する3つの症状</h2>
+        <section class="section" id="symptoms"><div class="container"><div class="section-heading"><p class="eyebrow">02</p><h2>散らかったメモに共通する3つの症状</h2></div><div class="prose">
           <p>自分のメモがどの段階にあるかは、次の症状が出ているかで判断できます。</p>
           <h3>症状1：同じ内容のメモが複数ある</h3>
           <p>過去に書いたことを見つけられず、同じテーマで2回目、3回目のメモを書いてしまう状態です。しかもそれぞれに違う情報が少しずつ入っているため、どれが最新か分からなくなります。これは検索でも見つけられなくなっている合図です。</p>
@@ -111,18 +97,16 @@
           <h3>症状3：見返す習慣がなくなっている</h3>
           <p>もっとも進行した状態です。書くことはあっても、過去のメモを開くことがほとんどない。この段階では、メモは記録ではなく、書いて気が済むための場所になっています。</p>
           <p>3つのうち1つでも当てはまるなら、書き方ではなく置き方の問題です。</p>
-        </section>
+        </div></div></section>
 
-        <section id="hierarchy">
-          <h2>階層で整理するという考え方</h2>
+        <section class="section" id="hierarchy"><div class="container"><div class="section-heading"><p class="eyebrow">03</p><h2>階層で整理するという考え方</h2></div><div class="prose">
           <p>解決策としてまず検討したいのが、メモを階層構造で持つ方法です。1枚のメモの下に、関連するメモをぶら下げていく形式です。</p>
           <p>たとえば「旅行」という親メモを作り、その下に「持ち物リスト」「行きたい場所」「予算」をぶら下げます。さらに「行きたい場所」の下に「京都」「金沢」を置く、といった具合です。</p>
           <p>この形式の利点は、<strong>探すときに全体を見なくていい</strong>ことにあります。旅行に関することを探すなら旅行の下だけを見ればよく、100件のメモがあっても、実際に目を通すのは数件で済みます。</p>
           <p>もう一つの利点は、書く場所が自然に決まることです。フラットな一覧だと、新しいメモをどこに書くか毎回考える必要はありませんが、そのぶん後から探せません。階層があると「これは旅行の下だな」と置き場所が決まるので、書いた時点で整理が終わっています。</p>
-        </section>
+        </div></div></section>
 
-        <section id="howto">
-          <h2>階層の作り方と、崩れないためのルール</h2>
+        <section class="section" id="howto"><div class="container"><div class="section-heading"><p class="eyebrow">04</p><h2>階層の作り方と、崩れないためのルール</h2></div><div class="prose">
           <p>階層構造は便利ですが、作り方を誤ると今度は「どの階層に入れたか分からない」という別の問題が起きます。次の4点を守ると崩れにくくなります。</p>
           <h3>深さは3階層までにする</h3>
           <p>親、子、孫の3階層を上限にしてください。4階層、5階層と深くすると、目的のメモにたどり着くまでのクリック数が増え、結局開かなくなります。3階層で足りないと感じたときは、階層を深くするのではなく、親メモを分けることを検討します。</p>
@@ -132,10 +116,9 @@
           <p>どこに置くか迷った時点で手が止まると、メモを取ること自体が面倒になります。「未分類」という親メモを1つ作っておき、判断できないものはそこに入れてください。週に一度、まとめて振り分ければ十分です。</p>
           <h3>タイトルは書き終わりに付ける</h3>
           <p>書く前にタイトルを決めようとすると手が止まります。本文を書き終えてから、後で自分が探すときに使いそうな言葉をタイトルにしてください。「打ち合わせ」より「10/3 A社打ち合わせ 見積もり条件」のほうが、半年後の自分に届きます。</p>
-        </section>
+        </div></div></section>
 
-        <section id="tag">
-          <h2>タグとの使い分け</h2>
+        <section class="section" id="tag"><div class="container"><div class="section-heading"><p class="eyebrow">05</p><h2>タグとの使い分け</h2></div><div class="prose">
           <p>整理の方法として、階層のほかにタグがあります。どちらが優れているという話ではなく、性質が違います。</p>
           <div class="table-scroll" tabindex="0" role="region" aria-label="階層とタグの比較">
             <table class="compare-table">
@@ -147,16 +130,14 @@
             </table>
           </div>
           <p>実際に使い分けるなら、<strong>置き場所は階層で決め、横断したいものにだけタグを付ける</strong>のが扱いやすい形です。両方を同時に細かく運用しようとすると、管理そのものが作業になってしまいます。</p>
-        </section>
+        </div></div></section>
 
-        <section id="mindmap">
-          <h2>つながりが見えないときはマインドマップで確認する</h2>
+        <section class="section" id="mindmap"><div class="container"><div class="section-heading"><p class="eyebrow">06</p><h2>つながりが見えないときはマインドマップで確認する</h2></div><div class="prose">
           <p>階層で整理していると、時間が経つにつれて「今どういう構造になっているか」が把握しづらくなることがあります。一覧はあくまで縦に並んだリストなので、全体の形が見えないためです。</p>
           <p>このとき役立つのが、階層をマインドマップとして図で見る方法です。親子関係が線でつながった図として表示されると、内容が偏っている親メモ、中身が1件しかない親メモ、置き場所を間違えているメモが一目で分かります。定期的に全体の形を確認すると、構造が壊れる前に手を入れられます。</p>
-        </section>
+        </div></div></section>
 
-        <section id="tools">
-          <h2>階層でメモを管理するためのアプリ</h2>
+        <section class="section" id="tools"><div class="container"><div class="section-heading"><p class="eyebrow">07</p><h2>階層でメモを管理するためのアプリ</h2></div><div class="prose">
           <p>ここまでの内容は、フォルダを作れるメモアプリであればどれでも実践できます。ただし、階層が深くなったときの見やすさや、全体構造の確認のしやすさはアプリによって差が出ます。</p>
           <p>RakuYadeで公開している<a href="/services/matome/">まとめときや</a>は、この階層メモの考え方を中心に作ったWebメモアプリです。メモの下にメモをぶら下げる形で階層を作れるほか、階層をマインドマップとして表示して全体のつながりを確認できます。よく使うメモのピン留め、テンプレート、自動保存にも対応しています。</p>
           <p>ブラウザで動くWebアプリなので、インストールは不要です。扱うデータや注意点は紹介ページにまとめてあるので、使う前に確認してください。</p>
@@ -167,16 +148,15 @@
             <p><a class="text-link" href="https://matome.webtool-labs.com/">まとめときやを実際に使ってみる</a></p>
             <p><a class="text-link" href="/services/">ほかのWebアプリも見る</a></p>
           </div>
-        </section>
+        </div></div></section>
 
-        <section id="summary">
-          <h2>まとめ</h2>
+        <section class="section" id="summary"><div class="container"><div class="section-heading"><p class="eyebrow">08</p><h2>まとめ</h2></div><div class="prose">
           <p>メモが探せなくなるのは、書いた量の問題ではなく、すべてが同じ階層に並んでいることが原因です。書いた瞬間に置き場所が決まる構造にしておけば、あとから探す作業そのものが減ります。</p>
           <p>始めるときは、いきなり過去のメモを全部整理しようとしないでください。まず親メモを3つか4つ作り、これから書くメモをそこに入れていく。過去分は、見返す必要が出たときに移動すれば十分です。整理のために時間を取ること自体が続かない原因になるので、日常の書く動作の中で少しずつ形を作っていくほうが結果的に長続きします。</p>
-        </section>
+        </div></div></section>
         <p class="small-note"><a class="text-link" href="/blog/">記事一覧に戻る</a></p>
-      </article>
-    </div>
+      </div>
+
   </main>
 
   <footer class="site-footer">

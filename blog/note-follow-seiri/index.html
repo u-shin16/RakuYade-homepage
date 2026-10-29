@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Zen+Kaku+Gothic+New:wght@700;900&display=swap">
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/theme-common.css?v=20261027h">
-  <link rel="stylesheet" href="/theme-pages.css?v=20261027h">
+  <link rel="stylesheet" href="/theme-pages.css?v=20261029e">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -70,7 +70,7 @@
     </div>
   </header>
 
-  <main id="main">
+  <main id="main" class="apps-page">
     <header class="page-hero">
       <div class="container">
         <nav class="breadcrumb" aria-label="パンくずリスト"><a href="/">ホーム</a><span class="sep">/</span><a href="/blog/">記事</a><span class="sep">/</span><span aria-current="page">noteのフォロー・フォロワーを整理する方法</span></nav>
@@ -81,19 +81,8 @@
       </div>
     </header>
 
-    <div class="section container content-layout">
-      <nav class="side-nav" aria-label="ページ内メニュー">
-        <strong>目次</strong>
-        <a href="#why">フォローが増えると起きること</a>
-        <a href="#manual">手作業で確認する方法と限界</a>
-        <a href="#policy">整理の前に決めておく方針</a>
-        <a href="#caution">やらないほうがいいこと</a>
-        <a href="#tools">照合を自動化する</a>
-        <a href="#summary">まとめ</a>
-      </nav>
-      <article class="prose">
-        <section id="why">
-          <h2>フォローが増えると起きること</h2>
+    <div class="reading-sections">
+        <section class="section" id="why"><div class="container"><div class="section-heading"><p class="eyebrow">01</p><h2>フォローが増えると起きること</h2></div><div class="prose">
           <p>noteを続けていると、フォローする相手もフォロワーも少しずつ増えていきます。数が増えること自体は歓迎すべきことですが、ある規模を超えると次の問題が出てきます。</p>
           <h3>タイムラインが機能しなくなる</h3>
           <p>フォロー数が数百を超えると、タイムラインの流れが速くなり、本当に読みたい人の記事が流れて見えなくなります。フォローしたはずの人の更新に気づけない、という状態です。</p>
@@ -101,10 +90,9 @@
           <p>自分がフォローしている相手のうち、誰がフォローを返してくれているか。逆に、自分をフォローしてくれているのに、こちらが返せていない人は誰か。数が増えると、これが分からなくなります。</p>
           <h3>フォロー返しを取りこぼす</h3>
           <p>とくに問題になるのがこれです。フォローされた通知は届きますが、通知は流れていくものなので、忙しい時期に来た通知は処理されずに埋もれます。数か月後に気づいて返しても、相手はすでに離れていることがあります。</p>
-        </section>
+        </div></div></section>
 
-        <section id="manual">
-          <h2>手作業で確認する方法と、その限界</h2>
+        <section class="section" id="manual"><div class="container"><div class="section-heading"><p class="eyebrow">02</p><h2>手作業で確認する方法と、その限界</h2></div><div class="prose">
           <p>noteでは、自分のプロフィールページからフォロー中の一覧とフォロワーの一覧を見られます。原理的には、この2つの一覧を突き合わせれば、フォローバックされていない相手（いわゆる片思いフォロー）と、フォロー返しをしていない相手を割り出せます。</p>
           <p>問題は、それが現実的な作業量かどうかです。</p>
           <ul>
@@ -113,10 +101,9 @@
             <li>フォロー関係は日々変わるため、一度照合しても時間が経つと使えなくなる</li>
           </ul>
           <p>100人程度までなら気合いで確認できますが、300人、500人となると、1回の照合に何時間もかかります。しかもその作業を定期的に繰り返す必要があるため、手作業での運用は早い段階で行き詰まります。</p>
-        </section>
+        </div></div></section>
 
-        <section id="policy">
-          <h2>整理の前に決めておく方針</h2>
+        <section class="section" id="policy"><div class="container"><div class="section-heading"><p class="eyebrow">03</p><h2>整理の前に決めておく方針</h2></div><div class="prose">
           <p>照合ができたとして、次に必要なのは「どうするか」の判断基準です。ここを決めずに始めると、リストを眺めるだけで終わります。</p>
           <h3>片思いフォローを一律で外す必要はない</h3>
           <p>フォローを返してくれない相手を全員外す、という方針は分かりやすい一方で、読みたい記事を書いている人まで外してしまいます。フォローの目的が「読むため」なのか「関係を作るため」なのかで、扱いは変わります。</p>
@@ -132,20 +119,18 @@
           </div>
           <h3>フォロー返しは、読んでから判断する</h3>
           <p>フォローされたからといって、機械的に返す必要はありません。相手の記事を1本読んでみて、今後も読みたいと思えるかで判断すると、タイムラインが荒れません。ただし、返すかどうかを判断する機会自体を失っているのが冒頭の問題なので、まずは「返していない人の一覧」を把握できる状態を作ることが先です。</p>
-        </section>
+        </div></div></section>
 
-        <section id="caution">
-          <h2>やらないほうがいいこと</h2>
+        <section class="section" id="caution"><div class="container"><div class="section-heading"><p class="eyebrow">04</p><h2>やらないほうがいいこと</h2></div><div class="prose">
           <p>フォロー整理でよく見かける方法のうち、避けたほうがよいものを挙げます。</p>
           <ul>
             <li><strong>短期間に大量のフォローと解除を繰り返す</strong> — フォロワーを増やす目的で行われることがありますが、相手から見て不信感につながりますし、多くのサービスで推奨されない行為です</li>
             <li><strong>フォロワー数だけを目標にする</strong> — 数は増えても、記事を読む人が増えるとは限りません。読まれ方を見るなら、フォロワー数よりビューやスキの推移のほうが実態に近い指標です</li>
             <li><strong>整理を毎日やる</strong> — フォロー関係は少しずつしか動きません。毎日確認しても変化はほとんどなく、作業だけが残ります。月に1回程度で十分です</li>
           </ul>
-        </section>
+        </div></div></section>
 
-        <section id="tools">
-          <h2>照合を自動化する</h2>
+        <section class="section" id="tools"><div class="container"><div class="section-heading"><p class="eyebrow">05</p><h2>照合を自動化する</h2></div><div class="prose">
           <p>ここまでの内容のうち、方針を決める部分は人が判断するしかありません。一方、2つの一覧を突き合わせる作業は、機械的な照合なので自動化できます。</p>
           <p>RakuYadeで公開している<a href="/services/mitonde/">よう見とんで</a>は、この照合を行うWebツールです。noteのフォロー関係を照合し、フォローバックされていない相手（片思いフォロー）と、フォロー返しをしていない候補を一覧で確認できます。プロフィールの詳細確認、個別・一括での操作、ユーザー名の変更履歴の確認にも対応しています。</p>
           <p>利用にあたってはnote.comのCookieを取得する手順が必要になるため、案内に沿って進めてください。扱うデータの範囲と注意点は紹介ページにまとめてあります。</p>
@@ -156,17 +141,16 @@
             <p><a class="text-link" href="https://mitonde.webtool-labs.com/">よう見とんでを実際に使ってみる</a></p>
             <p><a class="text-link" href="/services/">ほかのWebアプリも見る</a></p>
           </div>
-        </section>
+        </div></div></section>
 
-        <section id="summary">
-          <h2>まとめ</h2>
+        <section class="section" id="summary"><div class="container"><div class="section-heading"><p class="eyebrow">06</p><h2>まとめ</h2></div><div class="prose">
           <p>フォローが増えると、タイムラインが機能しなくなり、フォロー返しの取りこぼしも起きます。原因は、2つの一覧を突き合わせないと関係が分からないという構造にあります。</p>
           <p>手作業での照合は100人程度が限界です。それを超えたら、照合は自動化して、判断だけを自分で行う形に切り替えてください。そして整理は月に1回程度で十分です。頻度を上げても得られるものは増えず、続かなくなるだけです。</p>
           <p>整理の目的は数を増やすことではなく、読みたい記事が届く状態を保つことです。この目的を見失わなければ、フォローを外すかどうかの判断もぶれにくくなります。</p>
-        </section>
+        </div></div></section>
         <p class="small-note"><a class="text-link" href="/blog/">記事一覧に戻る</a></p>
-      </article>
-    </div>
+      </div>
+
   </main>
 
   <footer class="site-footer">

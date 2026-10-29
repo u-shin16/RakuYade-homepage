@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Zen+Kaku+Gothic+New:wght@700;900&display=swap">
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/theme-common.css?v=20261027h">
-  <link rel="stylesheet" href="/theme-pages.css?v=20261027h">
+  <link rel="stylesheet" href="/theme-pages.css?v=20261029e">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -125,7 +125,7 @@
     </div>
   </header>
 
-  <main id="main">
+  <main id="main" class="apps-page">
     <header class="page-hero">
       <div class="container">
         <nav class="breadcrumb" aria-label="パンくずリスト">
@@ -140,66 +140,40 @@
       </div>
     </header>
 
-    <div class="section container content-layout">
-      <nav class="side-nav" aria-label="ページ内メニュー">
-        <strong>目次</strong>
-        <a href="#overview">どんなアプリか</a>
-        <a href="#features">主な機能</a>
-        <a href="#why">開発の背景</a>
-        <a href="#difference">一般的なアラームとの違い</a>
-        <a href="#group-alarm">まとめアラーム機能</a>
-        <a href="#mission">起床ミッション</a>
-        <a href="#confirmation">起床確認の流れ</a>
-        <a href="#first-use">はじめての使い方</a>
-        <a href="#examples">具体的な使用例</a>
-        <a href="#caution">利用時の注意点</a>
-        <a href="#data">データと外部機能</a>
-        <a href="#recommend">おすすめの人</a>
-        <a href="#roadmap">今後の改善</a>
-        <a href="#faq">よくある質問</a>
-      </nav>
-
-      <article class="prose">
-        <section id="overview">
-          <h2>どのようなアプリなのか</h2>
+    <div class="reading-sections">
+        <section class="section" id="overview"><div class="container"><div class="section-heading"><p class="eyebrow">01</p><h2>どのようなアプリなのか</h2></div><div class="prose">
           <p>はよおきんかいは、朝が苦手な人が「起きたつもりで、実は二度寝していた」という状態をできるだけ減らすことを目的にしたWeb目覚ましアプリです。複数のアラームを設定できるほか、まとめアラーム機能・起床ミッション・起床確認を組み合わせることで、音を止めただけで終わらない仕組みを目指しています。起床後には、睡眠レポートなど行動を支援する機能もあわせて提供しています。</p>
-        </section>
+        </div></div></section>
 
-        <section id="features">
-          <h2>主な機能</h2>
+        <section class="section" id="features"><div class="container"><div class="section-heading"><p class="eyebrow">02</p><h2>主な機能</h2></div><div class="prose">
           <div class="feature-grid">
             <article class="feature-item"><h3>複数・まとめアラーム</h3><p>同じ時間帯のアラームを複数設定し、ひとまとまりとして管理します。</p></article>
             <article class="feature-item"><h3>起床ミッション</h3><p>音を止める前に操作を挟み、寝ぼけたまま対応を終えにくくします。</p></article>
             <article class="feature-item"><h3>起床確認</h3><p>ミッション後も操作状況を確認し、必要に応じて次の確認へつなげます。</p></article>
             <article class="feature-item"><h3>睡眠レポート</h3><p>起床後に、その日の起床状況を振り返るための情報を表示します。</p></article>
           </div>
-        </section>
+        </div></div></section>
 
-        <section id="why">
-          <h2>なぜ開発したのか</h2>
+        <section class="section" id="why"><div class="container"><div class="section-heading"><p class="eyebrow">03</p><h2>なぜ開発したのか</h2></div><div class="prose">
           <h3>解決したい悩み</h3>
           <p>このサービスは、開発者自身が朝に弱く、スマートフォン標準のアラームだけでは何度も二度寝をしてしまっていた経験から生まれました。アラームを止めた記憶がないまま二度寝してしまう、目覚ましを何個も設定しているのに結局すべて止めて寝続けてしまう、といった悩みを、自分自身のために解決しようとしたのが開発のきっかけです。同じような悩みを持つ人にも使ってもらえるよう、Webサービスとして公開しています。</p>
-        </section>
+        </div></div></section>
 
-        <section id="difference">
-          <h2>一般的なアラームとの違い</h2>
+        <section class="section" id="difference"><div class="container"><div class="section-heading"><p class="eyebrow">04</p><h2>一般的なアラームとの違い</h2></div><div class="prose">
           <p>多くのアラームアプリは、鳴った音を止める操作さえできれば、それ以降の状態は確認しません。そのため、寝ぼけたまま無意識にアラームを止めてしまい、そのまま二度寝してしまうことがよくあります。はよおきんかいでは、音を止めるだけでなく起床ミッションと起床確認を組み合わせることで、無意識な操作だけではアラーム対応が完了しない設計にしています。また、一度の対応で終わらせず、その後も起床状態を確認し続ける点が、一般的なアラームとの大きな違いです。</p>
-        </section>
+        </div></div></section>
 
-        <section id="group-alarm">
-          <h2>まとめアラーム機能の仕組み</h2>
+        <section class="section" id="group-alarm"><div class="container"><div class="section-heading"><p class="eyebrow">05</p><h2>まとめアラーム機能の仕組み</h2></div><div class="prose">
           <p>二度寝しやすい人の中には、「2分おき」「5分おき」のように、同じ時間帯に大量のアラームを設定してしまう人が少なくありません。これは一つひとつのアラームを弱めても、数の力で必ず気づけるようにするための工夫ですが、その分アラームの一覧が長くなり、設定や管理が煩雑になりやすいという問題があります。管理が大変になった結果、面倒になってアラームごと解除してしまい、逆に二度寝につながってしまうこともあります。</p>
           <p>まとめアラーム機能は、こうした大量のアラームをグループとしてまとめて管理できる機能です。関連するアラームをひとつのまとまりとして表示・確認できるようにすることで、就寝前の設定と起床時の操作の両方をシンプルにし、「アラームが多すぎて結局すべて解除してしまう」という二度寝の入り口を減らすことを狙っています。</p>
-        </section>
+        </div></div></section>
 
-        <section id="mission">
-          <h2>起床ミッションについて</h2>
+        <section class="section" id="mission"><div class="container"><div class="section-heading"><p class="eyebrow">06</p><h2>起床ミッションについて</h2></div><div class="prose">
           <p>起床ミッションは、アラームを止める前に簡単な操作を求める機能です。音を止めるだけの操作は、寝ぼけた状態でも無意識に行えてしまいますが、ひと手間の操作を挟むことで、意識がはっきりしないまま対応を終えてしまうことを防ぎます。</p>
           <p>大切にしているのは、ミッションを一度クリアしたらそれで終わり、という設計にしていないことです。ミッション完了後も引き続き起床状態を確認し、必要に応じて次のステップにつなげる考え方を採用しています。詳しい流れは次の「起床確認の流れ」で説明します。</p>
-        </section>
+        </div></div></section>
 
-        <section id="confirmation">
-          <h2>起床確認の流れ</h2>
+        <section class="section" id="confirmation"><div class="container"><div class="section-heading"><p class="eyebrow">07</p><h2>起床確認の流れ</h2></div><div class="prose">
           <ol class="step-list">
             <li>設定した時刻になると、アラームが作動します。</li>
             <li>アラームを止めるために、起床ミッションを行います。</li>
@@ -207,10 +181,9 @@
             <li>一定時間操作がない場合は、再びアラームやミッションにつなげ、本当に起きられているかを重ねて確認します。</li>
           </ol>
           <p>ミッションを一度クリアした後にまた眠ってしまう「二段階の二度寝」を防ぐために、起床確認を挟みながら段階的に起こしていく考え方で設計しています。</p>
-        </section>
+        </div></div></section>
 
-        <section id="first-use">
-          <h2>初めて利用する人向けの使い方</h2>
+        <section class="section" id="first-use"><div class="container"><div class="section-heading"><p class="eyebrow">08</p><h2>初めて利用する人向けの使い方</h2></div><div class="prose">
           <ol class="step-list">
             <li><span><a href="https://hayo.webtool-labs.com/app" target="_blank" rel="noopener noreferrer">はよおきんかい</a>にブラウザでアクセスします。</span></li>
             <li>案内に沿って、必要な初期設定（アラーム時刻や通知の許可など）を行います。</li>
@@ -218,27 +191,24 @@
             <li>起床時刻になったら、起床ミッションと起床確認の案内に沿って操作します。</li>
             <li>起床後は、睡眠レポートなどの機能でその日の起床状況を振り返ります。</li>
           </ol>
-        </section>
+        </div></div></section>
 
-        <section id="examples">
-          <h2>具体的な使用例</h2>
+        <section class="section" id="examples"><div class="container"><div class="section-heading"><p class="eyebrow">09</p><h2>具体的な使用例</h2></div><div class="prose">
           <ul>
             <li>短い間隔で複数のアラームを設定している人が、まとめアラームで就寝前の設定を整理する。</li>
             <li>アラームを無意識に止めてしまう人が、起床ミッションを挟んで操作の手順を増やす。</li>
             <li>一度起きても再び横になりやすい人が、起床確認を使って次の行動へ移るきっかけを作る。</li>
           </ul>
           <p>いずれの使い方でも起床を保証するものではありません。重要な予定がある日は、端末標準のアラームなども併用してください。</p>
-        </section>
+        </div></div></section>
 
-        <section id="caution">
-          <h2>Webアプリとして利用する際の注意点</h2>
+        <section class="section" id="caution"><div class="container"><div class="section-heading"><p class="eyebrow">10</p><h2>Webアプリとして利用する際の注意点</h2></div><div class="prose">
           <div class="notice">
             <p>はよおきんかいはWebブラウザ上で動作するアプリです。端末の省電力設定やブラウザのバックグラウンド動作の制限によっては、画面を閉じている間の通知やアラーム音が正しく動作しない場合があります。安定して利用するためには、通知を許可した上で、就寝時にブラウザ・タブを開いたままにしておくことをおすすめします。端末やブラウザごとの詳しい設定方法は、お使いのOS・ブラウザの案内をご確認ください。</p>
           </div>
-        </section>
+        </div></div></section>
 
-        <section id="data">
-          <h2>保存されるデータと外部機能</h2>
+        <section class="section" id="data"><div class="container"><div class="section-heading"><p class="eyebrow">11</p><h2>保存されるデータと外部機能</h2></div><div class="prose">
           <div class="table-scroll" tabindex="0" role="region" aria-label="はよおきんかいのデータ取扱い">
             <table class="compare-table">
               <thead><tr><th scope="col">対象</th><th scope="col">この紹介サイトで確認できる範囲</th></tr></thead>
@@ -251,25 +221,22 @@
           </div>
           <div class="notice"><p>保存先、保持期間、アカウント削除手順、通知以外の外部APIは確認中です。確認できていない内容を安全だと断定せず、重要情報の入力は控えるよう案内します。</p></div>
           <!-- TODO(site-owner): アラーム設定・起床履歴・睡眠レポート・アカウント情報の保存先、保持期間、削除方法、利用APIを確認して更新する。 -->
-        </section>
+        </div></div></section>
 
-        <section id="recommend">
-          <h2>利用をおすすめする人</h2>
+        <section class="section" id="recommend"><div class="container"><div class="section-heading"><p class="eyebrow">12</p><h2>利用をおすすめする人</h2></div><div class="prose">
           <ul>
             <li>アラームを何個も設定しているのに、結局二度寝してしまう人</li>
             <li>一人暮らしなどで、起こしてくれる人が身近にいない人</li>
             <li>朝の支度や行動に、もう一歩踏み出すきっかけがほしい人</li>
           </ul>
-        </section>
+        </div></div></section>
 
-        <section id="roadmap">
-          <h2>今後の改善について</h2>
+        <section class="section" id="roadmap"><div class="container"><div class="section-heading"><p class="eyebrow">13</p><h2>今後の改善について</h2></div><div class="prose">
           <p>現時点で、このポータルから確認できる具体的な追加予定は公表していません。不具合修正や使い勝手の改善を優先し、実装・公開が確認できた内容だけを更新情報と紹介ページへ反映します。</p>
           <!-- TODO(site-owner): 公開可能なロードマップが決まった場合のみ、実装状況と予定時期を確認して追記する。 -->
-        </section>
+        </div></div></section>
 
-        <section id="faq">
-          <h2>よくある質問</h2>
+        <section class="section" id="faq"><div class="container"><div class="section-heading"><p class="eyebrow">14</p><h2>よくある質問</h2></div><div class="prose">
           <div class="faq-list">
             <details class="faq-item">
               <summary><h3>利用料金はどこで確認できますか？</h3></summary>
@@ -292,9 +259,9 @@
               <p class="faq-answer"><a href="/contact.html">お問い合わせページ</a>から、サービス名「はよおきんかい」と発生した状況を添えてご連絡ください。</p>
             </details>
           </div>
-        </section>
+        </div></div></section>
 
-        <section>
+        <section class="section"><div class="container"><div class="prose">
           <div class="cta-card">
             <h2>はよおきんかいを使ってみる</h2>
             <p>通知設定と注意点を確認したうえで、まずはアラームをひとつ設定するところから始めてみてください。</p>
@@ -302,9 +269,9 @@
             <p><a class="text-link" href="https://hayo.webtool-labs.com/" target="_blank" rel="noopener noreferrer">はよおきんかいのサイトを見る</a></p>
             <p><a class="text-link" href="/services/">ほかのWebアプリと比較する</a></p>
           </div>
-        </section>
-      </article>
-    </div>
+        </div></div></section>
+      </div>
+
   </main>
 
   <footer class="site-footer">
