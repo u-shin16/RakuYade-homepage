@@ -35,14 +35,14 @@ h3 { font-weight: 700; }
 
 /* ---- 上のバー・ヘッダー ---- */
 .topbar { background: var(--surface-soft); height: 36px; display: flex; justify-content: flex-end; align-items: center; gap: 20px; padding: 0 48px; font-size: 12px; font-weight: 500; }
-.topbar a { font-family: var(--en); font-weight: 700; font-size: 14px; letter-spacing: .06em; color: var(--ink); text-decoration: none; }
+.topbar a { color: var(--ink); text-decoration: none; }
 .topbar a:hover { opacity: .7; }
 body .site-header { background: #fff; border-bottom: 0; box-shadow: none; backdrop-filter: none; position: static; }
 body .header-inner { width: auto; padding: 0 48px; max-width: none; }
 body .brand { font-family: var(--en); font-weight: 800; font-size: 28px; letter-spacing: 0.04em; display: inline-flex; align-items: center; gap: 10px; color: var(--ink); }
 body .brand-mark { display: none; }
 body .brand-logo { width: 32px; height: 32px; border-radius: 8px; display: block; }
-body .site-nav a { font-family: var(--en); font-weight: 700; font-size: 18px; letter-spacing: .06em; color: var(--ink); }
+body .site-nav a { font-weight: 500; font-size: 15px; color: var(--ink); }
 body .site-nav a[aria-current="page"] { border-bottom: 0; box-shadow: none; font-weight: 700; }
 body .site-nav a::after { display: none; }
 
