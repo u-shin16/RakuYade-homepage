@@ -128,3 +128,11 @@ body .service-choice .choice-label { color: var(--blue); }
   .apps-page .reading-sections .section .container { display: block; }
   .apps-page .reading-sections .section-heading { position: static; margin-bottom: 20px; flex-direction: row; align-items: baseline; }
 }
+
+/* お問い合わせ：最初のカードは横いっぱい、ホームの水色の帯と同じ作り */
+.apps-page .reading-sections #form .container { display: block; }
+.apps-page .reading-sections #form .contact-card { padding: clamp(32px, 5vw, 64px); margin: 0 0 24px; background: var(--sky-strong); color: #06304d; }
+.apps-page .reading-sections #form .contact-card h2 { font-size: clamp(24px, 3vw, 32px); color: #06304d; margin: 0 0 16px; }
+.apps-page .reading-sections #form .contact-card p { font-size: 15px; max-width: 720px; color: #06304d; margin: 0 0 24px; }
+.apps-page .reading-sections #form .contact-card p a { color: #06304d; }
+.apps-page .reading-sections #form .container > p { max-width: 800px; }
