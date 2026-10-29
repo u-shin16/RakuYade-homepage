@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Zen+Kaku+Gothic+New:wght@700;900&display=swap">
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/theme-common.css?v=20261027h">
-  <link rel="stylesheet" href="/theme-pages.css?v=20261027h">
+  <link rel="stylesheet" href="/theme-pages.css?v=20261029a">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -54,7 +54,7 @@
     </div>
   </header>
 
-  <main id="main">
+  <main id="main" class="apps-page">
     <header class="page-hero">
       <div class="container">
         <nav class="breadcrumb" aria-label="パンくずリスト"><a href="/">ホーム</a><span class="sep">/</span><span aria-current="page">Webアプリ一覧</span></nav>
@@ -64,16 +64,9 @@
       </div>
     </header>
 
-    <div class="section container content-layout">
-      <nav class="side-nav" aria-label="ページ内メニュー">
-        <strong>目次</strong>
-        <a href="#choose">悩みから選ぶ</a>
-        <a href="#compare">比較表</a>
-        <a href="#before-use">利用前の確認</a>
-      </nav>
-      <article class="prose">
-        <section id="choose">
-          <h2>解決したい悩みから選ぶ</h2>
+    <div class="apps-sections">
+        <section class="section" id="choose"><div class="container">
+          <div class="section-heading"><p class="eyebrow">Choose</p><h2>解決したい悩みから選ぶ</h2></div>
           <div class="service-choice-list">
             <article class="service-choice">
               <img src="/assets/icons/hayo.webp" alt="" width="64" height="64" loading="lazy">
@@ -130,10 +123,10 @@
               </div>
             </article>
           </div>
-        </section>
+        </div></section>
 
-        <section id="compare">
-          <h2>6つのアプリを比較する</h2>
+        <section class="section" id="compare"><div class="container">
+          <div class="section-heading"><p class="eyebrow">Compare</p><h2>6つのアプリを比較する</h2></div>
           <div class="table-scroll" tabindex="0" role="region" aria-label="アプリ比較表">
             <table class="compare-table">
               <thead><tr><th scope="col">アプリ</th><th scope="col">主な用途</th><th scope="col">利用前の準備</th><th scope="col">特に確認したい点</th></tr></thead>
@@ -148,11 +141,11 @@
             </table>
           </div>
           <p class="small-note">料金、対応ブラウザ、アカウント要否は変更される場合があります。利用開始前に各アプリ画面の最新表示も確認してください。</p>
-        </section>
+        </div></section>
 
-        <section id="before-use">
-          <h2>利用前に確認してほしいこと</h2>
-          <ul>
+        <section class="section" id="before-use"><div class="container">
+          <div class="section-heading"><p class="eyebrow">Notes</p><h2>利用前に確認してほしいこと</h2></div>
+          <ul class="notes-list">
             <li>重要な予定や業務データを扱う場合は、別の手段でも通知・バックアップを用意してください。</li>
             <li>Googleアカウントや共同作業の権限は、表示される範囲を確認してから許可・共有してください。</li>
             <li>AIの回答は補助情報として扱い、正確性が重要な内容は別の資料でも確認してください。</li>
@@ -160,8 +153,7 @@
             <li>保存データの詳細は、各紹介ページの「データと外部サービス」を確認してください。未確認事項は推測せず明示しています。</li>
           </ul>
           <div class="notice"><p>この一覧は、公開画面で機能と利用導線を確認できた6アプリを対象にしています。保存先や保持期間など確認できない項目は、各紹介ページで管理者確認中と明示しています。</p></div>
-        </section>
-      </article>
+        </div></section>
     </div>
   </main>
 

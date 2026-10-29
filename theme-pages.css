@@ -75,3 +75,31 @@ body .post-groups .lead, body .lead { font-size: 14px; color: #555; }
   body .service-hero-head { flex-direction: column; align-items: flex-start; }
 }
 body .service-choice .choice-label { color: var(--blue); }
+
+/* アプリ一覧：ホームのサービス一覧・見出しと同じ作り（2026-10-29） */
+.apps-page .section { background: #fff; padding: clamp(64px, 8vw, 104px) 0 0; border: 0; }
+.apps-page .section:last-child { padding-bottom: clamp(72px, 9vw, 120px); }
+.apps-page .section .container { width: auto; max-width: none; padding: 0 48px; margin: 0; }
+.apps-page .section-heading { margin-bottom: 32px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 16px; }
+.apps-page .section-heading .eyebrow { display: block; margin: 0; padding: 0; font-family: var(--en); font-weight: 800; font-size: clamp(40px, 5vw, 56px); line-height: 1; letter-spacing: .02em; color: var(--ink); text-transform: uppercase; }
+.apps-page .section-heading .eyebrow::before { display: none; }
+.apps-page .section-heading h2 { margin: 0; font-size: 14px; font-weight: 700; line-height: 1.5; letter-spacing: 0; }
+.apps-page .service-choice-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 56px 16px; }
+.apps-page .service-choice { display: flex; flex-direction: column; align-items: flex-start; gap: 0; padding: 0; border: 0; }
+.apps-page .service-choice img { order: -1; width: min(55%, 200px); height: auto; aspect-ratio: 1; margin: 8px auto 28px; align-self: center; display: block; }
+.apps-page .service-choice > div { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
+.apps-page .service-choice h3 { font-size: 16px; font-weight: 700; margin: 4px 0 0; }
+.apps-page .service-choice p { margin: 0; font-size: 14px; line-height: 1.8; color: #333; }
+.apps-page .service-choice .text-link { font-weight: 700; font-size: 13px; }
+.apps-page .compare-table th, .apps-page .compare-table td { font-size: 14px; padding: 16px 20px 16px 0; }
+.apps-page .compare-table thead th { padding-left: 16px; }
+.apps-page .small-note { font-size: 13px; color: #555; margin: 16px 0 0; }
+.apps-page .notes-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px 32px; }
+.apps-page .notes-list li { border-top: 2px solid var(--navy); padding: 20px 0 0; font-size: 14px; line-height: 1.9; color: #555; }
+.apps-page .notice { margin-top: 48px; }
+@media (max-width: 900px) {
+  .apps-page .notes-list { grid-template-columns: 1fr; }
+}
+@media (max-width: 700px) {
+  .apps-page .section .container { padding: 0 16px; }
+}
