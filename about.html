@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Zen+Kaku+Gothic+New:wght@700;900&display=swap">
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/theme-common.css?v=20261027h">
-  <link rel="stylesheet" href="/theme-pages.css?v=20261027h">
+  <link rel="stylesheet" href="/theme-pages.css?v=20261029c">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -64,7 +64,7 @@
     </div>
   </header>
 
-  <main id="main">
+  <main id="main" class="apps-page">
     <header class="page-hero">
       <div class="container">
         <nav class="breadcrumb" aria-label="パンくずリスト"><a href="/">ホーム</a><span class="sep">/</span><span aria-current="page">このサイトについて</span></nav>
@@ -74,54 +74,41 @@
       </div>
     </header>
 
-    <div class="section container content-layout">
-      <nav class="side-nav" aria-label="ページ内メニュー">
-        <strong>目次</strong>
-        <a href="#purpose">目的</a>
-        <a href="#policy">開発方針</a>
-        <a href="#operator">誰が運営しているか</a>
-        <a href="#feedback">利用者の声</a>
-        <a href="#standards">掲載基準</a>
-        <a href="#contact">お問い合わせ</a>
-      </nav>
-
-      <article class="prose">
-        <section id="purpose">
-          <h2>RakuYadeの目的</h2>
+    <div class="about-sections">
+        <section class="section about-lead" id="purpose"><div class="container">
+          <div class="section-heading"><p class="eyebrow">Mission</p><h2>RakuYadeの目的</h2></div>
           <p>RakuYade（ラクヤデ）は、関西弁の「楽やで」を由来とするWebアプリブランドです。「朝どうしても起きられない」「メモを整理できない」「問い合わせ対応を追いきれない」「麻雀を段階的に覚えたい」「絵のお題選びに迷う」「noteのフォロー関係を確認したい」といった、生活・学習・創作・個人運営の小さな不便をWebサービスとして解決することを目的に活動しています。</p>
-        </section>
+</div></section>
 
-        <section id="policy">
-          <h2>サービス開発の方針</h2>
-          <p>サービスを作るうえでは、次の3点を基本方針としています。</p>
-          <ul>
+        <section class="section" id="policy"><div class="container">
+          <div class="section-heading"><p class="eyebrow">Policy</p><h2>サービス開発の方針</h2></div>
+          <ul class="notes-list">
             <li><strong>初めてでも使いやすいこと。</strong>説明を読まなくても操作の見当がつく画面と、必要な機能へ自然にたどり着ける導線を意識しています。</li>
             <li><strong>実際の悩みを解決できること。</strong>機能の多さではなく、開発者自身が体験した困りごとが実際に解消するかどうかを基準に設計しています。</li>
             <li><strong>利用者の意見をもとに改善すること。</strong>公開した時点を完成形とはせず、お問い合わせでいただいたご意見や利用状況を参考に、継続的に改善を行っています。</li>
           </ul>
-        </section>
+</div></section>
 
-        <section id="operator">
-          <h2>誰が運営しているのか</h2>
+        <section class="section" id="operator"><div class="container">
+          <div class="section-heading"><p class="eyebrow">Operator</p><h2>誰が運営しているのか</h2></div>
           <p>RakuYadeは、開発者u-shinがサービスの設計から実装、公開後の保守までを担当しています。個人運営のため、対応に時間をいただく場合や、すべての要望に応えられない場合があります。確認できている運営情報と連絡窓口は、<a href="/operator.html">運営者情報</a>にまとめています。</p>
-        </section>
+</div></section>
 
-        <section id="feedback">
-          <h2>利用者の意見をもとにした改善</h2>
+        <section class="section" id="feedback"><div class="container">
+          <div class="section-heading"><p class="eyebrow">Feedback</p><h2>利用者の意見をもとにした改善</h2></div>
           <p>公開しているサービスは、いずれも実際に使ってみて感じた不便さや、お問い合わせでいただいたご意見をもとに機能を見直しています。すべてのご意見をすぐに反映できるわけではありませんが、いただいた声はサービスの方向性を考えるうえで重要な参考にしています。改善内容は、トップページの更新情報でご案内しています。</p>
-        </section>
+</div></section>
 
-        <section id="standards">
-          <h2>アプリ紹介の掲載基準</h2>
+        <section class="section" id="standards"><div class="container">
+          <div class="section-heading"><p class="eyebrow">Standards</p><h2>アプリ紹介の掲載基準</h2></div>
           <p>このサイトでは、公開先と実装済みの機能を確認できるアプリだけを紹介します。機能名だけでなく、解決する課題、利用例、使い始めるまでの手順、注意点、データや外部サービスについて分かる範囲を掲載します。</p>
           <p>保存期間や削除方法など確認できない情報は、推測で埋めません。管理者による確認が必要な項目として記録し、確認後に更新します。また、公開URLや仕様が確認できないアプリは、件数を増やすためだけにページ化しません。</p>
-        </section>
+</div></section>
 
-        <section id="contact">
-          <h2>お問い合わせについて</h2>
+        <section class="section" id="contact"><div class="container">
+          <div class="section-heading"><p class="eyebrow">Contact</p><h2>お問い合わせについて</h2></div>
           <p>サービスに関するご意見、不具合のご報告は<a href="/contact.html">お問い合わせページ</a>から承っています。いただいた内容は、不具合の再現確認や掲載内容の見直しに利用します。</p>
-        </section>
-      </article>
+</div></section>
     </div>
   </main>
 
