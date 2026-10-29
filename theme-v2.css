@@ -46,8 +46,8 @@ body #mission .about-copy h2 { font-size: 14px; margin: 0 0 12px; }
 body #mission .about-copy p { color: #555; font-size: 14px; line-height: 2; }
 
 /* ---- サービス：アイコンだけを並べる ---- */
-body .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 48px 16px; margin-top: 8px; }
-body .service-card { display: flex; flex-direction: column; padding: 0; background: transparent; border: 0 !important; box-shadow: none; border-radius: 0; }
+body .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px 48px; margin-top: 8px; }
+body .service-card { display: flex; flex-direction: column; padding: 24px; margin: -24px; background: transparent; border: 0 !important; box-shadow: none; border-radius: 0; }
 body .service-card .service-body { display: flex; flex-direction: column; gap: 4px; align-items: flex-start; flex: 1; }
 body .service-card .service-icon { order: -1; width: min(55%, 200px); height: auto; aspect-ratio: 1; border-radius: 22%; margin: 24px auto 28px; align-self: center; display: block; }
 body .service-card .service-features { display: none; }
@@ -57,6 +57,8 @@ body .service-card .service-kind { margin: 0; color: var(--muted); font-size: 14
 body .service-card p { font-size: 14px; line-height: 1.8; color: #333; margin: 6px 0 0; }
 body .service-card-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; margin-top: auto; padding-top: 12px; }
 body .service-card-actions .button { padding: 8px 22px; font-size: 13px; }
+
+body .service-card:hover { background: #fff; }
 
 /* ---- 大きなバナー ---- */
 .banner { background: var(--sky-strong); color: #06304d; margin-top: clamp(72px, 9vw, 120px); padding: clamp(56px, 7vw, 96px) 48px; }
