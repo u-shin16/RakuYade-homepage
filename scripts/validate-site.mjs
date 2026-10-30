@@ -193,9 +193,13 @@ for (const file of htmlFiles) {
       report(file, "SoftwareApplication構造化データがありません");
     }
     if (rel === "index.html") {
-      for (const type of ["WebSite", "Organization", "FAQPage"]) {
+      for (const type of ["WebSite", "Organization"]) {
         if (!structuredTypes.has(type)) report(file, `${type}構造化データがありません`);
       }
+    }
+    // よくある質問はホームから faq.html へ移した（2026-10-30）
+    if (rel === "faq.html" && !structuredTypes.has("FAQPage")) {
+      report(file, "FAQPage構造化データがありません");
     }
   }
 }
