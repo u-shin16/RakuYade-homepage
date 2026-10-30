@@ -48,12 +48,6 @@
       toggle.focus();
     }
   });
-
-  window.addEventListener("resize", function () {
-    if (window.innerWidth > 860) {
-      closeNav();
-    }
-  });
 })();
 
 /* 更新情報の「もっと見る」 */
