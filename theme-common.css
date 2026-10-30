@@ -87,3 +87,13 @@ body .button.secondary.button:hover, body .hero-actions .button.button:hover { b
 body .banner .button.button { --sweep: #fff; }
 body .banner .button.button:hover { border-color: #fff; color: var(--navy); }
 @media (prefers-reduced-motion: reduce) { body .button.button { transition: none; } }
+
+/* ---- スマホのメニュー：開閉せず、ロゴの下に全項目を常に出す（2026-10-30 ゆーしん「ハンバーガーの感度が悪い」） ---- */
+@media (max-width: 860px) {
+  body .header-inner, .js body .header-inner { flex-wrap: wrap; gap: 0; min-height: 0; padding-top: 12px; padding-bottom: 0; }
+  body .nav-toggle, .js body .nav-toggle { display: none; }
+  body .site-nav, .js body .site-nav { position: static; order: 3; width: 100%; margin: 4px 0 0; padding: 0; display: flex; flex-direction: row; flex-wrap: wrap; gap: 0 20px; background: #fff; border-bottom: 0; box-shadow: none; opacity: 1; visibility: visible; transform: none; transition: none; }
+  body .site-nav a, .js body .site-nav a { flex: none; padding: 10px 0; border-bottom: 2px solid transparent; font-size: 14px; line-height: 1.4; white-space: nowrap; }
+  body .site-nav a[aria-current="page"], .js body .site-nav a[aria-current="page"] { border-bottom-color: var(--navy); }
+  body .site-nav a:last-child, .js body .site-nav a:last-child { border-bottom-width: 2px; }
+}
