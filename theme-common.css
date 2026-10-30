@@ -88,17 +88,19 @@ body .banner .button.button { --sweep: #fff; }
 body .banner .button.button:hover { border-color: #fff; color: var(--navy); }
 @media (prefers-reduced-motion: reduce) { body .button.button { transition: none; } }
 
-/* ---- メニュー：右上の「MENU」で、白い面を画面いっぱいに出す（2026-10-30 モックのA案。紺は「画面の色が変わるのがキモい」で白に。同日PCもこの形に） ---- */
+/* ---- メニュー：右上の「MENU」で、ボタンの下に白い板を開く（2026-10-30 モックのA案から。紺は「画面の色が変わるのがキモい」で白に、全画面は「やめたほうがいい」で板に。PCも同じ形） ---- */
 @media (max-width: 860px) {
   body .header-inner, .js body .header-inner { min-height: 64px; padding-top: 0; padding-bottom: 0; flex-wrap: nowrap; }
 }
 @media all {
+  .js body .header-inner { position: relative; }
   .js body .nav-toggle { display: inline-flex; align-items: center; justify-content: center; min-width: 84px; height: 44px; padding: 0 18px; border: 2px solid var(--navy); border-radius: 999px; background: #fff; color: var(--navy); font-family: var(--en); font-weight: 800; font-size: 17px; letter-spacing: .1em; line-height: 1; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
-  .js body .site-nav { position: fixed; inset: 0; top: 0; z-index: 19; margin: 0; padding: 72px 16px 32px; display: flex; flex-direction: column; gap: 0; overflow-y: auto; background: #fff; border: 0; box-shadow: none; opacity: 0; visibility: hidden; transform: none; align-items: stretch; justify-content: flex-start; transition: opacity .15s, visibility .15s; }
-  .js body .site-nav.is-open { opacity: 1; visibility: visible; }
-  .js body .site-nav a { display: flex; align-items: baseline; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 13px; font-weight: 500; }
-  .js body .site-nav a:last-child { border-bottom: 1px solid var(--line); }
-  .js body .site-nav a::before { display: block; font-family: var(--en); font-weight: 800; font-size: 30px; line-height: 1; letter-spacing: .03em; color: var(--navy); }
+  .js body .nav-toggle[aria-expanded="true"] { background: var(--navy); color: #fff; }
+  .js body .site-nav { position: absolute; inset: auto; top: calc(100% - 4px); right: 48px; left: auto; z-index: 19; width: 320px; max-width: calc(100vw - 32px); margin: 0; padding: 4px 24px; display: flex; flex-direction: column; gap: 0; background: #fff; border: 1px solid var(--line); box-shadow: 0 12px 32px rgba(11, 42, 74, .12); opacity: 0; visibility: hidden; transform: translateY(-6px); align-items: stretch; justify-content: flex-start; transition: opacity .15s, visibility .15s, transform .15s; }
+  .js body .site-nav.is-open { opacity: 1; visibility: visible; transform: none; }
+  .js body .site-nav a { display: flex; align-items: baseline; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 12px; font-weight: 500; }
+  .js body .site-nav a:last-child { border-bottom: 0; }
+  .js body .site-nav a::before { display: block; font-family: var(--en); font-weight: 800; font-size: 24px; line-height: 1; letter-spacing: .03em; color: var(--navy); }
   .js body .site-nav a[href="/"]::before { content: "HOME"; }
   .js body .site-nav a[href="/services/"]::before { content: "APPS"; }
   .js body .site-nav a[href="/blog/"]::before { content: "BLOG"; }
@@ -106,16 +108,8 @@ body .banner .button.button:hover { border-color: #fff; color: var(--navy); }
   .js body .site-nav a[href="/faq.html"]::before { content: "FAQ"; }
   .js body .site-nav a[href="/contact.html"]::before { content: "CONTACT"; }
   .js body .site-nav a[aria-current="page"] { font-weight: 700; }
-  .js body .site-nav a[aria-current="page"]::before { color: var(--blue); }
-  /* 開いている間は、ロゴとボタンを上に固定して出す（下までスクロールしていても閉じられるように） */
-  .js body .site-header:has(.site-nav.is-open) .header-inner { position: fixed; top: 0; left: 0; right: 0; z-index: 20; background: #fff; }
-  .js body .site-header:has(.site-nav.is-open) .brand { position: relative; z-index: 20; }
-  .js body .site-header:has(.site-nav.is-open) .nav-toggle { position: relative; z-index: 20; }
-  html:has(.site-nav.is-open) { overflow: hidden; }
+  .js body .site-nav a:hover::before, .js body .site-nav a[aria-current="page"]::before { color: var(--blue); }
 }
-/* PCでは同じ形を大きく */
-@media (min-width: 861px) {
-  .js body .site-nav { padding: 104px 48px 48px; }
-  .js body .site-nav a { padding: 20px 0; font-size: 15px; gap: 20px; }
-  .js body .site-nav a::before { font-size: clamp(40px, 4vw, 56px); }
+@media (max-width: 700px) {
+  .js body .site-nav { right: 16px; }
 }
