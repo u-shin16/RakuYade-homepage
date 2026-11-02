@@ -20,7 +20,7 @@
   --radius-md: 0;
   --content: 1344px;
   --en: "Barlow Condensed", "Arial Narrow", sans-serif;
-  --head: "Barlow Condensed", "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", sans-serif;
+  --head: "Barlow Condensed", "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
 }
 
 body {
