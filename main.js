@@ -1,6 +1,7 @@
 (function () {
   "use strict";
 
+  // 各ページの<head>でも付けている。ここだけだと、読み込みの直後にメニューが一瞬開いて見える（2026-11-04 ゆーしん報告）
   document.documentElement.classList.add("js");
 
   var toggle = document.querySelector(".nav-toggle");
